@@ -25,7 +25,7 @@ def setting_ids(path: Path, prefix: str) -> list[str]:
     return sorted(name for name in values if name.startswith(prefix))
 
 
-def run(path: Path, settings: list[str], output: Path, model: str, device: str, api: bool) -> None:
+def run(path: Path, settings: list[str], output: Path, model: str, device: str) -> None:
     """Evaluate one compatible prediction file into a new, non-overwritten result."""
     if not settings:
         raise ValueError(f"No settings found in {path}")
@@ -36,8 +36,6 @@ def run(path: Path, settings: list[str], output: Path, model: str, device: str, 
         "--predictions", str(path), "--output", str(output),
         "--model", model, "--device", device,
     ]
-    if api:
-        command.append("--api-table4-convention")
     if "table6/without_first_stage_training" in settings:
         command.extend(("--entity-unconstrained-setting", "table6/without_first_stage_training"))
     for name in settings:
@@ -60,9 +58,9 @@ def main() -> None:
     if existing:
         raise FileExistsError(f"Result already exists; choose a new --output-dir: {existing}")
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    run(PREDICTIONS, setting_ids(PREDICTIONS, prefix), open_output, args.model, args.device, False)
+    run(PREDICTIONS, setting_ids(PREDICTIONS, prefix), open_output, args.model, args.device)
     if args.table == 4:
-        run(API_PREDICTIONS, setting_ids(API_PREDICTIONS, prefix), api_output, args.model, args.device, True)
+        run(API_PREDICTIONS, setting_ids(API_PREDICTIONS, prefix), api_output, args.model, args.device)
 
 
 if __name__ == "__main__":

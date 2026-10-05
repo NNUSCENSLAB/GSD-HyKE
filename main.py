@@ -40,8 +40,13 @@ def verify() -> None:
         problems.append("expected 24 test images")
     for stage in ("stage1", "stage2"):
         for name in ("adapter_config.json", "adapter_model.safetensors"):
-            if not (ROOT / "models" / stage / name).is_file():
+            path = ROOT / "models" / stage / name
+            if not path.is_file():
                 problems.append(f"missing models/{stage}/{name}")
+            elif name.endswith(".safetensors") and path.stat().st_size < 1_000_000:
+                problems.append(
+                    f"models/{stage}/{name} is too small and may be an unresolved Git LFS pointer; run git lfs pull"
+                )
     if problems:
         raise SystemExit("Verification failed:\n- " + "\n- ".join(problems))
     print(f"PASS: 24 test diagrams, {len(extraction_counts)} extraction settings, {len(api_counts)} API settings, {len(description_counts)} description settings, and two adapters are present.")

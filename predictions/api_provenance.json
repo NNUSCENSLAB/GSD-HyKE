@@ -2,6 +2,7 @@
   "schema_version": "1.0",
   "scope": "Table 4 API-model main repetitions; 24 revised test diagrams",
   "mapping": "index joined only after exact source/public image-basename validation",
+  "evaluation_convention": "The same role-constrained Entity/Relation and full EPV definitions used for the open-source Table 4 rows.",
   "records_sha256": "49d8d24b85460e32d0348f3f7888154e2082e8f7dc4ec299ad3324fe70034a6a",
   "gold_sha256": "ac67b31937f4c31a7c65351b8beffa7fabf58b903cf24cb829ba7b6fce0ab5cc",
   "source_paths_relative_to_bundle": true,

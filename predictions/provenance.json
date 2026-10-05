@@ -96,6 +96,6 @@
   },
   "known_limitations": [
     "The four API-based Table 4 rows are released separately in api_extraction_predictions.jsonl; see api_provenance.json for source hashes and selected repetitions. Raw API responses and API inference are not released.",
-    "The manuscript CLIPScore values use an unresolved historical scoring convention; the released description predictions support ROUGE-L and BERTScore recomputation, while CLIPScore remains explicitly excluded pending resolution."
+    "Table 3 CLIPScore is recomputed from the released images and descriptions with openai/clip-vit-base-patch32 and 2.5 * max(cosine(image_embedding, text_embedding), 0)."
   ]
 }

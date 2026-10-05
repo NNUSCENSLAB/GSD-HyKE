@@ -26,6 +26,7 @@ def load_module(name: str, path: Path):
 bootstrap = load_module("release_bootstrap", ROOT / "code/bootstrap.py")
 example = load_module("release_example", ROOT / "code/example.py")
 evaluation = load_module("release_evaluate", ROOT / "code/evaluate.py")
+description_evaluation = load_module("release_description_evaluate", ROOT / "code/evaluate_descriptions.py")
 triplets = load_module("release_triplets", ROOT / "code/triplets.py")
 
 
@@ -123,13 +124,13 @@ class BootstrapTests(unittest.TestCase):
         self.assertEqual(fn.tolist(), [0, 6])
 
 
-class HistoricalApiConventionTests(unittest.TestCase):
-    def test_incomplete_event_is_retained_for_historical_graph(self) -> None:
+class MetricConventionTests(unittest.TestCase):
+    def test_incomplete_event_can_be_retained_for_graph_audit(self) -> None:
         events = [{"input_mentions": ["a"], "output_mentions": []}]
         self.assertEqual(evaluation.clean_events(events), [])
         self.assertEqual(len(evaluation.clean_events(events, require_transition=False)), 1)
 
-    def test_historical_entity_matching_does_not_constrain_type(self) -> None:
+    def test_entity_matching_is_role_constrained_by_default(self) -> None:
         class ExactSimilarity:
             def score(self, left, right):
                 return float(left == right)
@@ -138,6 +139,12 @@ class HistoricalApiConventionTests(unittest.TestCase):
         gold = [("Object", "terrace")]
         self.assertEqual(evaluation.entity_tp(predicted, gold, ExactSimilarity(), 0.7), 0)
         self.assertEqual(evaluation.entity_tp(predicted, gold, ExactSimilarity(), 0.7, strict_label=False), 1)
+
+    def test_manuscript_clipscore_scale(self) -> None:
+        cosine = description_evaluation.torch.tensor([0.324575, -0.1])
+        scores = description_evaluation.clipscore_from_cosine(cosine)
+        self.assertAlmostEqual(float(scores[0]), 0.8114375, places=6)
+        self.assertEqual(float(scores[1]), 0.0)
 
 
 if __name__ == "__main__":

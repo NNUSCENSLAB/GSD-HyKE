@@ -17,7 +17,7 @@ Six of the 84 unique Stage 2 **training** records have empty `input_passage`
 and empty `gold_evolutions`. They were repeated ten times in the original
 training data (60 of 840 Stage 2 training rows). They are not negative test
 diagrams. A small gold-only listing is in `data/negative_training_examples.json`.
-No frozen model predictions for those six training cases have been identified;
+Predictions for those six training-only cases are outside the compact release;
 the package does not claim a negative-case accuracy result.
 
 The 24 public test images and 12 illustrative training images have item-level

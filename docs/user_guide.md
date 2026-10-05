@@ -30,8 +30,13 @@ can occur and are counted according to the selected evaluation convention.
 `--model` (SciBERT name or local path), and `--output-dir`. It refuses to
 overwrite existing result files. The default SciBERT model is
 `allenai/scibert_scivocab_uncased`, and the similarity threshold is 0.7.
-Table 4 API outputs require `--api-table4-convention`; the wrapper applies it
-automatically for the four API rows.
+The four API rows and six open-source rows in Table 4 use the same
+role-constrained Entity/Relation definitions and the same full EPV definition.
+
+Table 3 description metrics are recomputed with `python main.py evaluate
+--descriptions`. This includes ROUGE-L, SciBERT BERTScore, and CLIPScore using
+`openai/clip-vit-base-patch32` and
+`2.5 * max(cosine(image_embedding, text_embedding), 0)`.
 
 `scripts/reconstruct_triplets.py` converts the released raw triplet strings
 to the event candidates used for the Table 5 comparison. It refuses to

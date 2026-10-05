@@ -228,7 +228,6 @@ def graph_sample(predicted: Sequence[dict], gold: Sequence[dict], sim: SemanticS
         "ecc_recovered": len(gold_edges & mapped_edges),
         "ecc_gold": len(gold_edges),
         "epv": sum(valid) / len(valid) if valid else None,
-        "epv_core": sum(bool(event.get("input_mentions") and event.get("output_mentions")) for event in predicted) / len(predicted) if predicted else None,
     }
 
 
@@ -247,8 +246,7 @@ def collect_mentions(gold_rows: list[dict], prediction_rows: list[dict], include
 
 def evaluate_setting(
     gold_rows: list[dict], prediction_rows: list[dict], sim: SemanticSimilarity,
-    tau: float, api_table4_convention: bool = False,
-    entity_label_constrained: bool = True,
+    tau: float, entity_label_constrained: bool = True,
 ) -> dict:
     gold = {row["sample_id"]: clean_events(row["gold_evolutions"]) for row in gold_rows}
     predicted = {row["sample_id"]: clean_events(row["evolutions"]) for row in prediction_rows}
@@ -268,7 +266,7 @@ def evaluate_setting(
         gold_entities, pred_entities = entities(gold_events), entities(entity_events)
         tp = entity_tp(
             pred_entities, gold_entities, sim, tau,
-            strict_label=entity_label_constrained and not api_table4_convention,
+            strict_label=entity_label_constrained,
         )
         entity.tp += tp
         entity.fp += len(pred_entities) - tp
@@ -277,11 +275,10 @@ def evaluate_setting(
         graph_rows.append(graph_sample(graph_events, gold_events, sim, tau))
     recovered = sum(row["ecc_recovered"] for row in graph_rows)
     gold_edges = sum(row["ecc_gold"] for row in graph_rows)
-    epv_key = "epv_core" if api_table4_convention else "epv"
-    epv = [row[epv_key] for row in graph_rows if row[epv_key] is not None]
+    epv = [row["epv"] for row in graph_rows if row["epv"] is not None]
     return {
         "samples": len(gold),
-        "entity_label_constrained_relaxed" if entity_label_constrained and not api_table4_convention else "entity_relaxed": entity.as_dict(),
+        "entity_label_constrained_relaxed" if entity_label_constrained else "entity_relaxed": entity.as_dict(),
         "relation_relaxed": relation.as_dict(),
         "graph": {
             "ged": sum(row["ged"] for row in graph_rows) / len(graph_rows),
@@ -304,7 +301,6 @@ def main() -> None:
     parser.add_argument("--threshold", type=float, default=0.7)
     parser.add_argument("--device", choices=("auto", "cpu", "cuda"), default="auto")
     parser.add_argument("--batch-size", type=int, default=32)
-    parser.add_argument("--api-table4-convention", action="store_true", help="Use historical Table 4 API entity and graph conventions")
     parser.add_argument(
         "--entity-unconstrained-setting", action="append", default=[],
         help="Setting ID evaluated with the historical entity metric without role-label constraints",
@@ -328,11 +324,10 @@ def main() -> None:
     similarity = SemanticSimilarity(args.model, args.device)
     similarity.precompute(collect_mentions(gold_rows, selected_rows, include_incomplete=True), args.batch_size)
     results = {
-        "config": {"similarity_model": args.model, "threshold": args.threshold, "api_table4_convention": args.api_table4_convention},
+        "config": {"similarity_model": args.model, "threshold": args.threshold},
         "settings": {
             name: evaluate_setting(
                 gold_rows, grouped[name], similarity, args.threshold,
-                args.api_table4_convention,
                 entity_label_constrained=name not in args.entity_unconstrained_setting,
             )
             for name in selected

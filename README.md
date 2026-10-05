@@ -1,11 +1,12 @@
-# GSD-HyKE: compact reproducibility release
+# GSD-HyKE
 
-**Manuscript:** “A process-centered hypergraph data model and extraction method for landform transformations in geomorphological schematic diagrams” (submission draft for
-*Computers & Geosciences*). **Authors:** Yekang Zhou, Teng Zhong, Pei Xu,
+**Manuscript:** “A process-centered hypergraph data model and extraction
+method for landform transformations in geomorphological schematic diagrams”
+(submission draft for *Computers & Geosciences*). **Authors:** Yekang Zhou, Teng Zhong, Pei Xu,
 Songshan Yue, Run Shi, Jiahao Sun, Bingxian Lin, Liangchen Zhou, and Guonian
 Lü. **Contact:** Teng Zhong, tzhong27@njnu.edu.cn. This repository corresponds
 to the revised 24-diagram test set and manuscript Tables 3–7; it is not an
-accepted-paper archive.
+accepted-paper archive. Please confirm manuscript metadata before publishing.
 
 This repository is the compact public reproduction package for **GSD-HyKE**.
 It is intentionally organized around two reviewer-facing tasks: recomputing the
@@ -62,6 +63,11 @@ conda env create -f environment.yml
 conda activate gsd-hyke
 ```
 
+Run these commands from the repository root because `environment.yml` reads
+the adjacent `requirements.txt`. After cloning, `git lfs pull` can be used to
+confirm that both adapter binaries—not only their small LFS pointer files—are
+present.
+
 Alternatively, use pip without Conda:
 
 ```bash
@@ -82,9 +88,14 @@ mapping and therefore requires access to the base model plus a CUDA-capable
 GPU. The released end-to-end 24-diagram run was verified on one NVIDIA A100
 80 GB GPU. This is a tested reference configuration, not a measured minimum:
 the minimum VRAM, peak RAM, and wall-clock runtime have not been benchmarked.
-The released adapters do not contain the base-model weights. SciBERT is
-downloaded as `allenai/scibert_scivocab_uncased` unless a local path is
-supplied.
+The released adapters do not contain the base-model weights. On first use,
+Hugging Face downloads SciBERT (`allenai/scibert_scivocab_uncased`) for the
+semantic metrics, CLIP (`openai/clip-vit-base-patch32`) for Table 3, and Qwen
+(`Qwen/Qwen2.5-VL-7B-Instruct`) only for final-model inference. Internet access
+is therefore needed for the first model-backed run unless local model paths or
+a populated Hugging Face cache are supplied. `python main.py verify`, `python
+main.py demo`, `python -m unittest discover -s tests -v`, and `python main.py
+infer --check-only` do not download these external model weights.
 
 The inference wrapper processes 24 test diagrams, limits image inputs to
 262,144 pixels, and uses maximum generation lengths of 1,024 tokens for Stage
@@ -119,9 +130,6 @@ To use a local SciBERT cache, pass `--model /path/to/scibert`. The output
 schema is [schema/evolution_relation.json](schema/evolution_relation.json):
 `input_mentions` = Input, `output_mentions` = Output, and
 `mechanism_mentions` = Driver; Time and Location are optional role lists.
-
-For a real frozen test case, the existing CPU-only walkthrough requires no
-model download:
 
 This CPU-only example requires no model download. It joins one test diagram to
 the released full-model prediction by `sample_id`, verifies the referenced
@@ -163,8 +171,7 @@ The principal public interfaces are:
 For a table-oriented entry point, use `python scripts/evaluate.py --table 4`
 (or `5`, `6`, `7`). It reads the setting IDs recorded in the released
 prediction files, writes a separate JSON result per table under
-`results/tables/`, and refuses to overwrite an existing result. Table 4 also
-runs the API rows using their historical metric convention. For example:
+`results/tables/`, and refuses to overwrite an existing result. For example:
 
 ```bash
 python scripts/evaluate.py --table 4 --device cpu
@@ -193,17 +200,15 @@ The four API-model rows of Table 4 use a separate sanitized prediction file:
 ```bash
 python main.py evaluate \
   --predictions predictions/api_extraction_predictions.jsonl \
-  --api-table4-convention \
-  --output results/recomputed_api_extraction_metrics_historical.json \
+  --output results/recomputed_api_extraction_metrics.json \
   --device cpu
 ```
 
-`--api-table4-convention` is necessary to reproduce the historical Table 4
-scoring: Entity matching is not type-constrained, GED/nGED use all parsed
-events including incomplete ones, and EPV is the Input-and-Output core rate.
-Without this flag, the compact evaluator's default conventions give different
-Entity and graph scores. The released records reproduce the selected main
-repetition for each model;
+All Table 4 rows use the same metric definitions: Entity matching preserves
+the Object/Mechanism/Location/Time labels, Relation matching preserves the
+Input/Output/Driver/Location/Time roles, and EPV requires Input, Output, and
+Driver. The released API records reproduce the selected main repetition for
+each model;
 they do not permit new API inference or the three-repeat selection procedure
 to be rerun without the original service and unreleased raw responses. See
 `predictions/api_provenance.json` for the selected repetition and source hashes.
@@ -217,11 +222,17 @@ have been checked against the released Table 5 rows. One raw output is
 malformed at test index 18 and is preserved as such, rather than silently
 repaired. See `predictions/triplet_provenance.json`.
 
-Description ROUGE-L and SciBERT BERTScore are recomputed with:
+Table 3 ROUGE-L, SciBERT BERTScore, and CLIPScore are recomputed with:
 
 ```bash
 python main.py evaluate --descriptions --setting table3/qwen_gsd_hyke
 ```
+
+CLIPScore uses `openai/clip-vit-base-patch32` and the manuscript convention
+`2.5 * max(cosine(image_embedding, text_embedding), 0)`. The command downloads
+both SciBERT and CLIP unless local model paths are supplied with `--model` and
+`--clip-model`. Use `--skip-clipscore` only when a text-metric-only run is
+intended.
 
 ## Recompute paired-bootstrap intervals
 
@@ -264,14 +275,14 @@ requirements are the user's responsibility.
   0.2. `configs/README.md` documents why the portable effective configuration
   uses 0.2.
 - Six relation-negative records belong to the original **training** split,
-  not the 24-image test split. Their gold-only listing is released, but no
-  frozen predictions for them have been found; no negative-test metric is
-  claimed. See `docs/data_statement.md`.
+  not the 24-image test split. Their gold-only listing is released for data
+  documentation; predictions for these training-only records are outside the
+  compact release, and no negative-test metric is claimed. See
+  `docs/data_statement.md`.
 - The four API-model Table 4 rows can be re-evaluated from frozen per-diagram
   predictions, but the repository does not reproduce their API generation.
-- The historical manuscript CLIPScore convention is still under author review.
-  This release therefore recomputes Table 3 ROUGE-L and BERTScore but does not
-  claim reproduction of CLIPScore.
+- Table 3 CLIPScore is reproducible from the released images and frozen Stage
+  1 descriptions using the documented CLIP model and formula.
 - Frozen predictions are provided for the triplet and ablation comparisons;
   their model checkpoints are not included. Their evaluation is reproducible,
   but their inference is not reproduced end to end.

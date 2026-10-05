@@ -4,8 +4,9 @@
   "purpose": "Sufficient per-diagram counts for independently reproducing paired bootstrap intervals.",
   "reproducibility_scope": {
     "bootstrap_reproduction": "complete from the released per-diagram count tables",
-    "raw_comparator_metric_recomputation": "not included; comparator prediction artifacts remain outside this package",
-    "model_inference": "outside the scope of this package"
+    "comparator_metric_recomputation": "supported by predictions/extraction_predictions.jsonl, data/test_gold.json, and code/evaluate.py",
+    "comparator_model_inference": "outside scope because comparator checkpoints are not included",
+    "final_model_inference": "supported by the released Stage 1 and Stage 2 adapters plus the external Qwen base model"
   },
   "gold_mapping": {
     "path": "gold.json",

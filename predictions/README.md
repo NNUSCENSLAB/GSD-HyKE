@@ -26,7 +26,8 @@ join was validated against all 24 image filenames. Only parsed Evolution
 Relations are included; raw API responses, request payloads, and response IDs
 are not released. Source paths and SHA-256 hashes are in `api_provenance.json`.
 Use `python main.py evaluate --predictions predictions/api_extraction_predictions.jsonl
---api-table4-convention --device cpu` for the manuscript Table 4 metrics.
+--device cpu` for the manuscript Table 4 metrics. API and open-source rows use
+the same role-constrained Entity/Relation definitions and full EPV definition.
 
 `triplet_raw.jsonl` contains the 24 direct-triplet model outputs before event
 reconstruction, including one malformed raw output. Its exact source hash,
