@@ -1,12 +1,11 @@
 # GSD-HyKE: compact reproducibility release
 
-**Manuscript:** “GSD-HyKE: hypergraph-based knowledge extraction of
-geomorphological evolution from schematic diagrams” (submission draft for
+**Manuscript:** “A process-centered hypergraph data model and extraction method for landform transformations in geomorphological schematic diagrams” (submission draft for
 *Computers & Geosciences*). **Authors:** Yekang Zhou, Teng Zhong, Pei Xu,
 Songshan Yue, Run Shi, Jiahao Sun, Bingxian Lin, Liangchen Zhou, and Guonian
 Lü. **Contact:** Teng Zhong, tzhong27@njnu.edu.cn. This repository corresponds
 to the revised 24-diagram test set and manuscript Tables 3–7; it is not an
-accepted-paper archive. Please confirm manuscript metadata before publishing.
+accepted-paper archive.
 
 This repository is the compact public reproduction package for **GSD-HyKE**.
 It is intentionally organized around two reviewer-facing tasks: recomputing the
@@ -102,7 +101,6 @@ python main.py verify
 python main.py demo
 python -m unittest discover -s tests -v
 python main.py infer --check-only
-sha256sum -c SHA256SUMS
 ```
 
 ## Run the lightweight example
