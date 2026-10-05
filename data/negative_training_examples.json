@@ -1,0 +1,15 @@
+{
+  "scope": "Stage 2 training examples only; not an independent test set",
+  "source_file_sha256": "f9d5dbdb05f46d0e1b75a69ee365121a646113d51e4045da52feda82246930f5",
+  "unique_records": 6,
+  "repetitions_per_record_in_training": 10,
+  "frozen_predictions_available": false,
+  "records": [
+    {"record_id": "GSD_0064", "input_passage": "", "gold_evolutions": []},
+    {"record_id": "GSD_0036", "input_passage": "", "gold_evolutions": []},
+    {"record_id": "GSD_0075", "input_passage": "", "gold_evolutions": []},
+    {"record_id": "NATURE_NC_0020", "input_passage": "", "gold_evolutions": []},
+    {"record_id": "GSD_0011", "input_passage": "", "gold_evolutions": []},
+    {"record_id": "GSD_0096", "input_passage": "", "gold_evolutions": []}
+  ]
+}

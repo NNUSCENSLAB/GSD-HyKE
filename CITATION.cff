@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite the associated manuscript and this repository release."
+title: "GSD-HyKE: compact reproducibility release"
+type: software
+version: 1.0.0-rc1
+license: MIT
+repository-code: "https://github.com/NNUSCENSLAB/GSD-HyKE"
+authors:
+  - family-names: Zhou
+    given-names: Yekang
+  - family-names: Zhong
+    given-names: Teng
+    email: tzhong27@njnu.edu.cn
+  - family-names: Xu
+    given-names: Pei
+  - family-names: Yue
+    given-names: Songshan
+  - family-names: Shi
+    given-names: Run
+  - family-names: Sun
+    given-names: Jiahao
+  - family-names: Lin
+    given-names: Bingxian
+  - family-names: Zhou
+    given-names: Liangchen
+  - family-names: Lü
+    given-names: Guonian
+keywords:
+  - geomorphological schematic diagrams
+  - hypergraph
+  - knowledge extraction
+  - multimodal large language model

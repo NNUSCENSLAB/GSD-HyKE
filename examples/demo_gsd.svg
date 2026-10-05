@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" role="img" aria-label="Synthetic two-stage river-valley evolution diagram">
+  <rect width="900" height="320" fill="#ffffff"/>
+  <text x="105" y="38" font-family="sans-serif" font-size="22">Stage 1: bedrock valley</text>
+  <text x="565" y="38" font-family="sans-serif" font-size="22">Stage 2: incised river valley</text>
+  <path d="M35 90 L155 90 L230 170 L305 90 L420 90 L420 270 L35 270 Z" fill="#baa78a" stroke="#574c3b" stroke-width="3"/>
+  <path d="M485 90 L605 90 L655 170 L690 220 L725 170 L775 90 L865 90 L865 270 L485 270 Z" fill="#baa78a" stroke="#574c3b" stroke-width="3"/>
+  <path d="M660 221 Q690 235 720 221" fill="none" stroke="#328cb6" stroke-width="9"/>
+  <path d="M430 158 L470 158 M458 146 L470 158 L458 170" fill="none" stroke="#333333" stroke-width="4"/>
+  <text x="403" y="205" font-family="sans-serif" font-size="17" text-anchor="middle">fluvial incision →</text>
+  <text x="170" y="293" font-family="sans-serif" font-size="17">Synthetic schematic; not a study figure</text>
+</svg>

@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "scope": "Table 4 API-model main repetitions; 24 revised test diagrams",
+  "mapping": "index joined only after exact source/public image-basename validation",
+  "records_sha256": "49d8d24b85460e32d0348f3f7888154e2082e8f7dc4ec299ad3324fe70034a6a",
+  "gold_sha256": "ac67b31937f4c31a7c65351b8beffa7fabf58b903cf24cb829ba7b6fce0ab5cc",
+  "source_paths_relative_to_bundle": true,
+  "excludes": [
+    "raw API response",
+    "response identifiers",
+    "request payload",
+    "stage-one output"
+  ],
+  "settings": {
+    "table4/gpt_4o": {
+      "source_model": "gpt-4o",
+      "model_returned": [
+        "gpt-4o-2024-08-06"
+      ],
+      "main_repeat": 1,
+      "selection_rule": "median relation_relaxed F1; exact ties prefer repeat 1",
+      "rows": 24,
+      "reported_relation_f1": 0.20689655172413793,
+      "summary_file": "outputs/gpt-4o/revised_test24/formal_evaluation_summary.json",
+      "summary_sha256": "7993c046c1596bea6571ae81e20046319c416e6ed9739092cd18fa19755b39ed",
+      "stage2_file": "outputs/gpt-4o/revised_test24/repeat_1/stage2.json",
+      "stage2_sha256": "99875c0f29c77a5c16268d711d9d993aea7669ec645be903d5f24a98ffaa6978",
+      "stage2_for_eval_file": "outputs/gpt-4o/revised_test24/repeat_1/stage2_for_eval.json",
+      "stage2_for_eval_sha256": "836ee625bfc8227142c4120d97d0b1c1a9ae084e9d830b92a2a0e379d15874b7"
+    },
+    "table4/gpt_5_4": {
+      "source_model": "gpt-5.4",
+      "model_returned": [
+        "gpt-5.4-2026-03-05"
+      ],
+      "main_repeat": 3,
+      "selection_rule": "median relation_relaxed F1; exact ties prefer repeat 1",
+      "rows": 24,
+      "reported_relation_f1": 0.2432432432432432,
+      "summary_file": "outputs/gpt-5.4/revised_test24/formal_evaluation_summary.json",
+      "summary_sha256": "8aa9916dd51e9dccea46705c5d8f0e8cd143b4d447390208746bb13a61b52ad2",
+      "stage2_file": "outputs/gpt-5.4/revised_test24/repeat_3/stage2.json",
+      "stage2_sha256": "b1e72fb5f1c88fdcc1a222dd0752a946ac92a5392e3631700b32c3782ebaf21c",
+      "stage2_for_eval_file": "outputs/gpt-5.4/revised_test24/repeat_3/stage2_for_eval.json",
+      "stage2_for_eval_sha256": "9c69ffe25c8b02ad5c2bf9ed27e5e8893367063a2cfe22e1920039f3271c3d65"
+    },
+    "table4/gpt_5_5": {
+      "source_model": "gpt-5.5",
+      "model_returned": [
+        "gpt-5.5-2026-04-23"
+      ],
+      "main_repeat": 2,
+      "selection_rule": "median relation_relaxed F1; exact ties prefer repeat 1",
+      "rows": 24,
+      "reported_relation_f1": 0.26415094339622647,
+      "summary_file": "outputs/gpt-5.5/revised_test24/formal_evaluation_summary.json",
+      "summary_sha256": "538d9f5157b12f887199ddd55ae46cdda8bd53f690881d025a43472cb5f14fe4",
+      "stage2_file": "outputs/gpt-5.5/revised_test24/repeat_2/stage2.json",
+      "stage2_sha256": "96ba389638a23527242e864cfe2103a68294588b79dfd570a0dc710a1a033d9c",
+      "stage2_for_eval_file": "outputs/gpt-5.5/revised_test24/repeat_2/stage2_for_eval.json",
+      "stage2_for_eval_sha256": "487509963d65c7df4a61c466569d2f7592aadd13004d48a2c5702d975210909a"
+    },
+    "table4/gpt_5_6_terra": {
+      "source_model": "gpt-5.6-terra",
+      "model_returned": [
+        "gpt-5.6-terra"
+      ],
+      "main_repeat": 1,
+      "selection_rule": "median relation_relaxed F1; exact ties prefer repeat 1",
+      "rows": 24,
+      "reported_relation_f1": 0.27450980392156865,
+      "summary_file": "outputs/gpt-5.6-terra/revised_test24/formal_evaluation_summary.json",
+      "summary_sha256": "8b9e970d1e5bdbc5085d670ed55e7d3081b0ac8dff5f0eb1a180bc1ad926c90c",
+      "stage2_file": "outputs/gpt-5.6-terra/revised_test24/repeat_1/stage2.json",
+      "stage2_sha256": "b56d9587b921c293eae772372776870e178a456178c0f85b46aa5ea3aeea9d12",
+      "stage2_for_eval_file": "outputs/gpt-5.6-terra/revised_test24/repeat_1/stage2_for_eval.json",
+      "stage2_for_eval_sha256": "3b1ad871773a2d275a5df4b3f17dfc61489630659b990bf5edfa56a0930ba9c8"
+    }
+  }
+}

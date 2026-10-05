@@ -1,0 +1,688 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Small format examples only; not the complete training corpus.",
+  "tasks": {
+    "classification": [
+      {
+        "example_id": "CLS-3095",
+        "question": "What kind of climate condition typically favors the formation of badlands? a.tropical rainforest climate b.arid or semi-arid climate c.temporal temperate forest climate d.subarctic tundra climate",
+        "reference_answer": "b.arid or semi-arid climate\n\nBadlands typically form in regions with arid or semi-arid climates where there is little vegetation to hold the soil together. The lack of plant cover allows for rapid erosion by wind and water, leading to the distinctive rugged terrain characterized by steep slopes, deep gullies, and eroded rock formations. These conditions are common in areas that receive very little rainfall but experience occasional heavy rainfalls that cause flash floods, which can quickly erode the landscape. The combination of sparse vegetation and intense weathering processes results in the dramatic topography associated with badlands. Therefore, the correct answer is b.arid or semi-arid climate.",
+        "split": "train"
+      },
+      {
+        "example_id": "CLS-0490",
+        "question": "The phenomenon where ice sheets expand outward from a central accumulation area due to gravity is called: a. glacial erosion b. glacial deposition c. ice flow d. ice melting",
+        "reference_answer": "c. ice flow",
+        "split": "train"
+      },
+      {
+        "example_id": "CLS-1407",
+        "question": "The concept of 'geomorphological equilibrium' refers to which field? a. meteorology b. hydrology c. geomorphology d. ecology e. climatology",
+        "reference_answer": "c. geomorphology",
+        "split": "train"
+      },
+      {
+        "example_id": "CLS-1680",
+        "question": "The primary factor that determines the direction of a river flow is: a. wind patterns b. topography c. soil type d. vegetation cover",
+        "reference_answer": "b. topography",
+        "split": "train"
+      },
+      {
+        "example_id": "CLS-2018",
+        "question": "The 'karst' landform, characterized by sinkholes, caves, and underground streams, is primarily formed through which type of weathering? a.chemical weathering b.physical weathering c.biological weathering d.all of the above",
+        "reference_answer": "a. chemical weathering",
+        "split": "train"
+      },
+      {
+        "example_id": "CLS-0458",
+        "question": "In terms of karst topography, which process does not contribute to its formation? a. solution b. subsidence c. deposition d. weathering",
+        "reference_answer": "c. deposition",
+        "split": "train"
+      },
+      {
+        "example_id": "CLS-3383",
+        "question": "In geography, the term 'drainage divide' refers to: a. an area where all precipitation falls as snow b. the line that separates two drainage basins c. a flat region where no rivers or streams exist d. the deepest part of a river channel",
+        "reference_answer": "b. the line that separates two drainage basins",
+        "split": "train"
+      },
+      {
+        "example_id": "CLS-2308",
+        "question": "The primary agent responsible for transporting glacial till over long distances is: a.wind b.river water c.glacier ice d.ocean currents",
+        "reference_answer": "c.glacier ice",
+        "split": "train"
+      }
+    ],
+    "completion": [
+      {
+        "example_id": "COM-V6-0001",
+        "question": "What technique is used to measure subglacial topography for inferring past landscape evolution?",
+        "reference_answer": "Interpretation of subglacial topography, measured using radio-echo sounding (RES) surveying, can therefore be used to infer past processes of landscape evolution and former ice dynamics.",
+        "split": "train"
+      },
+      {
+        "example_id": "COM-V6-0002",
+        "question": "How do changes in obliquity influence the study of glacial landforms on Mars?",
+        "reference_answer": "Cycles of glacial maxima and minima have been identified based on superposition of glacial features, and models indicate that changes in obliquity may have influenced the formation and retreat of glaciers.",
+        "split": "train"
+      },
+      {
+        "example_id": "COM-V6-0003",
+        "question": "What are the primary landforms found in karst landscapes?",
+        "reference_answer": "The primary karst landforms described are underground drainage systems and caves, dolines and Karrenfeld on the plateau surface, and swallow holes and karst springs around the plateau base.",
+        "split": "train"
+      },
+      {
+        "example_id": "COM-V6-0004",
+        "question": "How do allogenic rivers contribute to the formation of karst plains?",
+        "reference_answer": "Allogenic rivers form karst plains by extending into caves; in the cited Japanese example, this process constitutes the country's largest fluvial karst system.",
+        "split": "train"
+      },
+      {
+        "example_id": "COM-V6-0005",
+        "question": "What causes the dissolution of rocks leading to the formation of karst structures?",
+        "reference_answer": "Karst structures result from hydrochemical and hydraulic erosion of soluble rocks. Limestone is particularly susceptible to dissolution by water rich in dissolved CO2, while evaporites such as gypsum and salt can develop similar dissolution landforms.",
+        "split": "train"
+      },
+      {
+        "example_id": "COM-V6-0006",
+        "question": "How do tectonic movements influence the formation of mountain belts like the Andes?",
+        "reference_answer": "This model represents an example of cross-scale interaction in geology: a narrow “dam\" to sediment transport in the trench could exert a strong influence on the formation of Andes. We suggest trench-sediment transport and subduction are important processes that have a profound effect on the dynamics of plate boundaries and orogenesis.",
+        "split": "train"
+      },
+      {
+        "example_id": "COM-V6-0007",
+        "question": "How does magmatism contribute to the interaction between Earth's interior and surface processes?",
+        "reference_answer": "In magmatic arcs, magmatism creates new crust that subsequently interacts with the hydrosphere and atmosphere through erosion and weathering. Surface materials and volatiles are also transported inward, linking Earth's interior and surface through mass exchange and influencing carbon, oxygen, and sulfur cycling.",
+        "split": "train"
+      },
+      {
+        "example_id": "COM-V6-0008",
+        "question": "What type of glacial landform network is observed in the Aurora-Schmidt basins of East Antarctica?",
+        "reference_answer": "The Aurora-Schmidt basins contain a dendritic, fluvial-planform valley network. It was formerly a continuous land surface and was later dissected by deep glacial troughs that may follow earlier tectonic weaknesses.",
+        "split": "train"
+      }
+    ],
+    "description_generation": [
+      {
+        "index": 0,
+        "sample_id": "FIG-083",
+        "image": "example_images/FIG-083.png",
+        "paper_title": "Landslide Distribution and Development Characteristics in the Beiluo River Basin",
+        "figure": "Figure 8",
+        "figure_caption": "Figure 8. Loess–bedrock interface landslide.",
+        "related_text": "Figure 8 shows the evolution process of a loess–bedrock interface landslide.",
+        "reference_output": "Paragraph:\nStages I and II label Loess, Bedrock, a Potential sliding mass, a Sliding surface, and a Crack. Stages II and III show Cracks on the Potential sliding mass. Across stages III and IV, a Potential sliding mass becomes a displaced Potential sliding mass.\nEvent Sentences:\nAcross stages III and IV, a Potential sliding mass becomes a displaced Potential sliding mass."
+      },
+      {
+        "index": 1,
+        "sample_id": "FIG-053",
+        "image": "example_images/FIG-053.png",
+        "paper_title": "The fragmentation-induced fluidisation of pyroclastic density currents",
+        "figure": "Fig. 5",
+        "figure_caption": "Fig. 5: The fragmentation-induced fluidisation of pyroclastic density currents.",
+        "related_text": "Dense PDCs are clearly compressible. This is best illustrated by the newly recognised fragmentation-induced fluidisation (FIF), which helps explain many observations, including how BAFs become fluidised and achieve long runouts (Fig. 5 ).",
+        "reference_output": "Paragraph:\nNear the source, a Gravitational dome collapse transforms dome material into a coarse-grained block-and-ash granular flow. From stage A to stage C, the coarse-grained granular flow is transformed into a bimodal fragmented mixture through Fragmentation and Rapid diffusion. During Fragmentation-induced fluidisation, a bimodal fragmented mixture is transformed into a fluidized block-and-ash flow through Strong elutriation of ash. The same stage is labeled with high Excess pore pressure. From stage C to stage D, the fluidized block-and-ash flow is transformed into a Dilute ash-cloud surge through ash elutriation. From stage C to stage D, the fluidized block-and-ash flow is transformed into a Dense underflow through Defluidisation. Toward stage E, the Dense underflow is transformed into a defluidized distal underflow through Defluidisation as Excess pore pressure decreases and Effective friction coeff increases.\nEvent Sentences:\nNear the source, a Gravitational dome collapse transforms dome material into a coarse-grained block-and-ash granular flow.\nFrom stage A to stage C, the coarse-grained granular flow is transformed into a bimodal fragmented mixture through Fragmentation and Rapid diffusion.\nDuring Fragmentation-induced fluidisation, a bimodal fragmented mixture is transformed into a fluidized block-and-ash flow through Strong elutriation of ash.\nFrom stage C to stage D, the fluidized block-and-ash flow is transformed into a Dilute ash-cloud surge through ash elutriation.\nFrom stage C to stage D, the fluidized block-and-ash flow is transformed into a Dense underflow through Defluidisation.\nToward stage E, the Dense underflow is transformed into a defluidized distal underflow through Defluidisation as Excess pore pressure decreases and Effective friction coeff increases."
+      },
+      {
+        "index": 2,
+        "sample_id": "FIG-112",
+        "image": "example_images/FIG-112.png",
+        "paper_title": "Modified SWAT Model for Agricultural Watershed in Karst Area of Southwest China",
+        "figure": "Figure 6",
+        "figure_caption": "Figure 6. Comparison of the hydrological process in the surface between the SWAT and modified SWAT model.",
+        "related_text": "For a visual representation of these parameters, see Figure 6.",
+        "reference_output": "Paragraph:\nIn panel (a), rainfall is transformed into river water through accumulated surface runoff or rainfall excess in the SWAT model. In panel (a), water in the soil profile is transformed into river water through lateral flow from the hillslope outlet in the SWAT model. In panel (a), water in the soil profile is transformed into shallow aquifer water through seepage from the soil profile in the SWAT model. In panel (a), shallow aquifer water is transformed into river water through groundwater flow or base flow into the main channel in the SWAT model. In panel (a), shallow aquifer water is transformed into deep aquifer water through percolation into the deep aquifer in the SWAT model. In panel (b), water from the bottom of the soil profile is transformed into water stored in the epikarst zone through seepage into the epikarst zone in the modified SWAT model. In panel (b), water stored in the epikarst zone is transformed into shallow aquifer water through seepage into the shallow aquifer in the modified SWAT model. In panel (b), water stored in the epikarst zone is transformed into karst spring flow entering the river through spring discharge in the modified SWAT model.\nEvent Sentences:\nIn panel (a), rainfall is transformed into river water through accumulated surface runoff or rainfall excess in the SWAT model.\nIn panel (a), water in the soil profile is transformed into river water through lateral flow from the hillslope outlet in the SWAT model.\nIn panel (a), water in the soil profile is transformed into shallow aquifer water through seepage from the soil profile in the SWAT model.\nIn panel (a), shallow aquifer water is transformed into river water through groundwater flow or base flow into the main channel in the SWAT model.\nIn panel (a), shallow aquifer water is transformed into deep aquifer water through percolation into the deep aquifer in the SWAT model.\nIn panel (b), water from the bottom of the soil profile is transformed into water stored in the epikarst zone through seepage into the epikarst zone in the modified SWAT model.\nIn panel (b), water stored in the epikarst zone is transformed into shallow aquifer water through seepage into the shallow aquifer in the modified SWAT model.\nIn panel (b), water stored in the epikarst zone is transformed into karst spring flow entering the river through spring discharge in the modified SWAT model."
+      },
+      {
+        "index": 3,
+        "sample_id": "FIG-045",
+        "image": "example_images/FIG-045.jpg",
+        "paper_title": "Recharge landforms in a semi-confined karst aquifer revealed by geophysical and high-resolution UAV-based LiDAR surveys",
+        "figure": "Fig. 10",
+        "figure_caption": "Fig. 10. Conceptual evolutionary model of the Lagoa Santa–Sete Lagoas karst region and karst aquifer system: (A) tectono-structural framework and carbonate/metapelitic units; (B) Paleogene–Neogene landscape dissection and latosol development; (C) Quaternary (Pleistocene) karstification and speleogenesis following the modern groundwater gradient; and (D) present-day recharge dynamics with a more efficient connection between the perched aquifer and the subjacent semi-confined karst aquifer.",
+        "related_text": "The Lagoa Santa–Sete Lagoas karst system developed in Neoproterozoic carbonate rocks beneath a metapelitic caprock. Brasiliano tectonic deformation established faults and fractures that controlled later landscape dissection, karstification, and groundwater recharge.",
+        "reference_output": "Paragraph:\nFrom the Neoproterozoic (Ediacaran) stage in panel A to the Brasiliano Orogeny in panel B, in the Lagoa Santa–Sete Lagoas karst region, undeformed carbonate and metapelitic units are transformed into a tectono-structural framework of faulted and fractured rocks through tectonic deformation and uplift. During the Paleogene–Neogene stage in panel C at Santa Helena ridge, the tectono-structural framework is transformed into a dissected landscape with metapelite latosols through denudation. During the Quaternary (Pleistocene) stage in panel D in the carbonate terrain beneath Santa Helena ridge, the dissected landscape with metapelite latosols is transformed into a karstified carbonate aquifer with dolines and lakes through karstification and speleogenesis. During the Quaternary (Holocene) stage in panel E, water in the perched aquifer contributes to recharge of the subjacent semi-confined karst aquifer through infiltration and groundwater flow across the dolines and lakes of the Lagoa Santa–Sete Lagoas karst region.\nEvent Sentences:\nFrom the Neoproterozoic (Ediacaran) stage in panel A to the Brasiliano Orogeny in panel B, in the Lagoa Santa–Sete Lagoas karst region, undeformed carbonate and metapelitic units are transformed into a tectono-structural framework of faulted and fractured rocks through tectonic deformation and uplift.\nDuring the Paleogene–Neogene stage in panel C at Santa Helena ridge, the tectono-structural framework is transformed into a dissected landscape with metapelite latosols through denudation.\nDuring the Quaternary (Pleistocene) stage in panel D in the carbonate terrain beneath Santa Helena ridge, the dissected landscape with metapelite latosols is transformed into a karstified carbonate aquifer with dolines and lakes through karstification and speleogenesis.\nDuring the Quaternary (Holocene) stage in panel E, water in the perched aquifer contributes to recharge of the subjacent semi-confined karst aquifer through infiltration and groundwater flow across the dolines and lakes of the Lagoa Santa–Sete Lagoas karst region."
+      },
+      {
+        "index": 4,
+        "sample_id": "FIG-058",
+        "image": "example_images/FIG-058.png",
+        "paper_title": "Integrated Field Surveying and Land Surface Quantitative Analysis to Assess Landslide Proneness in the Conero Promontory Rocky Coast (Italy)",
+        "figure": "Figure 9",
+        "figure_caption": "Figure 9. Conceptual landscape model. The 3D sketch illustrates the different morphodynamic styles characterizing the southern (left sketch) and northern (right sketch) coastal sectors. Morphostructural settings strongly influence the types and development of different gravity-induced processes, as well as diverse landform associations and their spatial organization and evolution at different scales. Slope-scale, MRC-driven processes dominate the long-term morphoevolution of the northern coastal sector, whereas the southern sector is generally characterized by cliff-scale, force-driven processes. See Figure 10 for further details.",
+        "related_text": "The surface roughness parameter shows values up to 33 m (Figure 7). The southern sector shows the largest values, while average small values are recorded in the northern sector (Figure 7 B). This latter zone, along its northern portion shows similar values that range between 3 and 6 m; more in detail, the values are the same where the transect crosses both the La Vela and Portonovo landslide bodies (Figure 1, Figure 3 A and Figure 9).",
+        "reference_output": "Paragraph:\nIn the southern coastal sector, Talus is associated with first-time block failure by rock slide and fall. In the southern coastal sector, Talus is transformed into reactivated Talus through debris flow and fall. In the northern coastal sector, Talus is transformed into reactivated Talus through debris avalanche and slide. In the northern coastal sector, coastal slope material is transformed into a Scarp through Gravity-driven deformation with flexural toppling and buckling. In the northern coastal sector, coastal slope material is transformed into a Trench through First-time slope collapse with rock avalanche and slide.\nEvent Sentences:\nIn the southern coastal sector, Talus is transformed into reactivated Talus through debris flow and fall.\nIn the northern coastal sector, Talus is transformed into reactivated Talus through debris avalanche and slide.\nIn the northern coastal sector, coastal slope material is transformed into a Scarp through Gravity-driven deformation with flexural toppling and buckling.\nIn the northern coastal sector, coastal slope material is transformed into a Trench through First-time slope collapse with rock avalanche and slide."
+      },
+      {
+        "index": 5,
+        "sample_id": "FIG-014",
+        "image": "example_images/FIG-014.png",
+        "paper_title": "The Rio Grande Rise: Current Knowledge and Future Frontiers for Deep-Sea Science, Mineral Resources and Governance",
+        "figure": "Figure 4",
+        "figure_caption": "Figure 4. Conceptual model for the tectono-magmatic and sedimentary evolution of the Rio Grande Rise from the Cretaceous to the present, integrating the formation of hotspot magmatism, onset of tectonic rifting, partial emersion during the Eocene, and subsequent subsidence: (a) volcanic outpouring of oceanic crust; (b) extensional forces caused intense rifting and formation of the Cruzeiro do Sul Rift; (c) the uplift of significant seamounts that were subaerially exposed, and volcanogenic material; (d) alteration of volcanic rocks and formation of tropical paleosoil; (e) subsidence and formation polymetallic crusts.",
+        "related_text": "In the evolutionary model, five events were identified (Figure 4): (a) Volcanic outpouring of oceanic crust caused by the Tristan–Gough hotspot, contemporaneous with the Paraná–Etendeka Large Igneous Province, would have given rise to the WRGR (Figure 4a; [28,29]); (b) Uplift of the central part of the WRGR, extensional forces caused intense rifting and formation of the Cruzeiro do Sul Rift (CSR) extensional pulse which have been active from the Maastrichtian to the middle/upper Eocene, then, covered by pelagic sedimentation occurring over the volcanics of the WRGR and ERGR (Figure 4b; [6,58–60]); (c) Plate accommodation and oceanic opening movements generated a second intense magmatism phase in the Eocene, which caused the uplift of significant seamounts that were subaerially exposed, while the active grabens were filled with volcanogenic material (Figure 4c; [8,28,35,36,38]); (d) Mounds were formed within the sedimentary package and erosional truncation, providing evidence that part of the WRGR was exposed above sea level. Subsequently, the WRGR cooled and submerged, with fault analysis suggesting a period of little tectonic activity (Figure 4d; [37,39,48,54,58]); (e) Formation of a dense system of sub-vertical normal faults (Eocene to Recent), classified as polygonal faults, which may be related to fluid upwelling and the formation of pockmarks (approximately 500 m in diameter); one hypothesis is that gas or hydrothermal groundwater vents occur at the base of the sedimentary package, as revealed by the presence of sub-vertical zones of seismic signal loss and thermal anomalies (Figure 4e; [9,31]).",
+        "reference_output": "Paragraph:\nAt 85 Ma, oceanic crust is transformed into the West RGR through volcanic outpouring caused by hotspot magmatism. At 60 Ma, oceanic crust of the West RGR is transformed into rifted oceanic crust containing the Cruzeiro do Sul Rift through extensional forces and tectonic rifting. At 47 Ma, submarine seamounts are transformed into subaerially exposed seamounts through Eocene magmatism and uplift. At 40 Ma, volcanic rocks are transformed into tropical Paleosol through alteration. Today, the Rio Grande Rise is transformed into Crusts through subsidence.\nEvent Sentences:\nAt 85 Ma, oceanic crust is transformed into the West RGR through volcanic outpouring caused by hotspot magmatism.\nAt 60 Ma, oceanic crust of the West RGR is transformed into rifted oceanic crust containing the Cruzeiro do Sul Rift through extensional forces and tectonic rifting.\nAt 47 Ma, submarine seamounts are transformed into subaerially exposed seamounts through Eocene magmatism and uplift.\nAt 40 Ma, volcanic rocks are transformed into tropical Paleosol through alteration.\nToday, the Rio Grande Rise is transformed into Crusts through subsidence."
+      }
+    ],
+    "visual_dialogue": [
+      {
+        "index": 0,
+        "sample_id": "FIG-103",
+        "image": "example_images/FIG-103.png",
+        "paper_title": "Tectonic and climatic implications of the Aleutian Arc initiation ≥56 million years ago",
+        "figure": "Fig. 4",
+        "figure_caption": "Fig. 4: Comparison of Izu-Bonin-Mariana (IBM) with Aleutian and Kamchatka subduction/arc initiation illustrates differences in subduction initiation processes and chemistries of oldest rocks.",
+        "related_text": "Specific geochemical lava types are commonly associated with arc initiation. The most detailed studies of subduction initiation have been conducted on the Izu-Bonin-Mariana Arc (IBM), where subduction is believed to have been initiated by 52.5 Ma with volcanism beginning at ~ 52 Ma 18 , 22 , 23 , 24 . The oldest lavas associated with IBM subduction initiation are MORB-like forearc basalts (FABs) and dolerites, followed by boninites ( ~ 51.3-45 Ma) and then tholeiitic and calc-alkaline basalts at ~45 Ma (Fig.",
+        "reference_output": "E1 | I{IN:asthenospheric material; OUT:forearc basalts FAB; MECH:upwelling and melting; slab sinking and rollback; LOC:IBM forearc; TIME:53 Ma to 52 Ma} | DIR:I\nE2 | I{IN:slab and sediment material; OUT:Boninite lavas; MECH:slab and sediment melting; LOC:IBM system; TIME:52 Ma to 51-45 Ma} | DIR:I\nE3 | I{IN:Boninite volcanic arc; OUT:migrated arc with Calc-alkaline and tholeiitic arc volcanism; MECH:mantle corner flow; flux melting; Arc migration; LOC:IBM system; TIME:After 45 Ma} | DIR:I\nE4 | I{IN:Olyutorsky collision configuration; OUT:initial Aleutian arc configuration; MECH:jump in subduction to the fracture zone; slab breakoff; TIME:at least 57 Ma to 56-55 Ma} | DIR:I\nE5 | I{IN:initial Aleutian arc; OUT:Growing Aleutian Arc; Aleutian Basin; MECH:mantle corner flow following slab detachment; TIME:From 56-55 Ma to 55-50 Ma} | DIR:I\nE6 | I{IN:Growing Aleutian Arc; Active Beringian Margin; OUT:Growing Kamchatka and Aleutian Arcs; Passive Beringian Margin; MECH:continued subduction; mantle corner flow; arc volcanism that becomes calc-alkaline in the west and tholeiitic in the east; TIME:From 55-50 Ma to 50-45 Ma} | DIR:I"
+      },
+      {
+        "index": 1,
+        "sample_id": "FIG-017",
+        "image": "example_images/FIG-017.png",
+        "paper_title": "An Integrated Approach for Constraining Depositional Zones in a Tide-Influenced River: Insights from the Gorai River, Southwest Bangladesh",
+        "figure": "Figure 10",
+        "figure_caption": "Figure 10. Integrated depositional framework for the tidal to fluvial transition of the Gorai River with representative core profiles for each depositional zone. The upstream extents of the backwater and tidal influence are not singular points in space or time (e.g., Dalrymple and Choi [1]), and as such, are represented as shaded envelopes. The gray shaded zone represents the backwater transition, where parts, but not all, of the channel bed are situated above mean sea level (see Figure 3). The blue shaded zone represents the limit of tidal influence, which varies depending on seasonal conditions, in particular, the magnitude of fluvial discharge.",
+        "related_text": "Examination of grain size partitioning across the Gorai River TFT reveals that downstream changes in the relative proportions of sand and mud do not occur in a uniform manner, but rather exhibit two reaches with pronounced differences—the first occurring between BTG and KAL, where sand content decreases from 26.9% to 2.3%, and the second occurring between MHP and KMK, where sand content decreases from 86.7% to 55.8% (Figure 10; Table 1). We attribute the former shift in grain size to mass extraction of bedload sediments (i.e., sand) at the upstream limit of the backwater zone, which is situated immediately downstream of KAL (Figure 3 and Figure 10). Backwater hydrodynamics have been shown to fundamentally influence sediment transport capacity in coastal rivers through the introduction of non-uniform water-flow conditions (e.g., Refs.",
+        "reference_output": "None."
+      },
+      {
+        "index": 2,
+        "sample_id": "FIG-109",
+        "image": "example_images/FIG-109.png",
+        "paper_title": "An ancient river landscape preserved beneath the East Antarctic Ice Sheet",
+        "figure": "Fig. 6",
+        "figure_caption": "Fig. 6: Inferred evolution of the ancient landscape. a Original fluvial land surface; b Gondwana break-up activates pre-existing tectonic structures, causing drainage re-organisation; c Local warm-based ice forms on the uplands and incises local-scale glacial valleys; d Ice expansion towards continental-scale ice sheet with cold-based ice rapidly developed over highlands, and warm-based ice steering through and eroding the intervening structurally-controlled valleys so they become fjords; e Continental-scale ice with cold-based ice on the highlands and continental-scale ice flowing slowly over the region, largely ignoring topography.",
+        "related_text": "We propose that the following relative sequence of events is required to modify an original large-scale fluvial landscape to become a set of three remnant upland blocks separated by deep troughs. This landscape evolution scenario (Fig. 6 ) requires interactions between tectonic structures and climate in order to dissect the original fluvial drainage network, modify it with local ice, and subsequently preserve it beneath the continental-scale EAIS.",
+        "reference_output": "E1 | T{IN:fluvial drainage network} | B{OUT:reorganised drainage; MECH:rifting during Gondwana separation; fault reactivation; ongoing fluvial incision; TIME:From the pre-glacial fluvial landscape} | DIR:B\nE2 | T{IN:uplands; OUT:local-scale glacial valleys; MECH:glacial incision; TIME:During local warm-based glaciation} | DIR:T\nE3 | T{IN:local-scale glacial valleys; OUT:fjords; MECH:warm-based ice steering; erosion; TIME:During ice-sheet expansion} | DIR:T\nE4 | T{IN:inherited original valley network; OUT:preserved valley network; MECH:cold-based ice preservation; TIME:Continental ice-sheet stage} | DIR:T"
+      },
+      {
+        "index": 3,
+        "sample_id": "FIG-003",
+        "image": "example_images/FIG-003.png",
+        "paper_title": "Topographic Base Maps from Remote Sensing Data for Engineering Geomorphological Modelling: An Application on Coastal Mediterranean Landscape",
+        "figure": "Figure 2",
+        "figure_caption": "Figure 2. Case study: space–time evolution of the geomorphological areas affected by “slope-over-wall” superimposed on a scheme illustrating the evolution of the process (a) and on a 3D representation (b). Area (I) corresponds spatially to the northwestern coastal strip, where the morphology of the original “slope-over-wall” model is preserved; in terms of morpho-evolutionary changes, it corresponds to the initial phase on the temporal context of interest. Area (II) is the intermediate one, where the original cliff is fragmented by gullies and ravines affected by erosive and flow processes triggered by shallow retrogressive landslides. Area (III) corresponds to the area progressively affected by active, reactivated, and deep seated landslides and is the space–time expression of the definitive gravity-driven evolution of the coastal slope.",
+        "related_text": "From a geomorphological point of view, previous research has identified many coastal slopes similar to the studied one as a typical “slope-over-wall” model [1], composed of a convex, colluvial, debris upper slope laying on remnants of a buried, uplifted marine platform covered by rounded, gravelly marine deposits hanging on the cliffed bedrock toe slope (Figure 2). By reinterpreting the above geomorphological evolution model in terms of spatiotemporal geomorphological zoning, three coastal sectors can be recognized and delimited, as shown in Figure 2.",
+        "reference_output": "E1 | T{IN:original cliff; OUT:fragmented cliff with gullies and ravines; MECH:erosive and flow processes; shallow retrogressive landslides; LOC:Area I; Area II} | DIR:T\nE2 | T{IN:fragmented cliff; OUT:definitive gravity-driven coastal slope; MECH:active, reactivated, and deep seated landslides; LOC:Area II; Area III} | DIR:T"
+      },
+      {
+        "index": 4,
+        "sample_id": "FIG-012",
+        "image": "example_images/FIG-012.png",
+        "paper_title": "Structural barriers control the spatial extent of slow earthquake slip",
+        "figure": "Fig. 5",
+        "figure_caption": "Fig. 5: Schematic illustration of our interpretation for the slip tendency on the megathrust.",
+        "related_text": "The following mechanisms are proposed to impede the propagation of slow earthquake slip, as schematically summarized in Fig. 5 :",
+        "reference_output": "E1 | I{IN:Not slipped megathrust segment; OUT:Slipped area; MECH:Initial diffuse migration of slow slip; TIME:From the 2016 episode to the 2020-2021 episode} | DIR:I\nE2 | I{IN:migrating slow-slip front; OUT:terminated slip front; MECH:increased fault-normal stress; LOC:updip megathrust limit; Steep thrust} | DIR:I\nE3 | I{IN:initially unslipped megathrust patch; OUT:second spatially separated Slipped area; LOC:deep-seated Strike-slip fault} | DIR:I\nE4 | I{IN:migrating slow-slip front; OUT:terminated slip front; MECH:enhanced fault-normal stress; LOC:downdip limit; Rigid prism} | DIR:I"
+      },
+      {
+        "index": 5,
+        "sample_id": "FIG-118",
+        "image": "example_images/FIG-118.png",
+        "paper_title": "Cascading events during the 1650 tsunamigenic eruption of Kolumbo volcano",
+        "figure": "Fig. 7",
+        "figure_caption": "Fig. 7: Schematic of the Kolumbo volcanogenic tsunami cascade.",
+        "related_text": "Since the seismic data show that both source mechanisms could have contributed to tsunami genesis and neither the slope failure nor the explosion-induced tsunami simulations alone could reproduce eyewitness accounts, we performed additional model runs to simulate the effects of a combination of both source mechanisms, superimposing the wave field of an explosion onto that caused by flank deformation. Our results show that assuming a lag time of 4 min from the beginning of flank deformation to the explosion, and an explosion-derived initial wave height of 150 m, we are able to simulate a tsunami pattern that is consistent with all known historical eyewitness accounts (red solid line in Fig. However, the reported inundation indicates that the southeastern coast of Sikinos was affected by a tsunami with significant run-up height.",
+        "reference_output": "E1 | I{IN:airborne pumice; OUT:Pumice rafts; MECH:Fallout; TIME:initial eruption} | DIR:I\nE2 | I{IN:airborne pumice; OUT:seabed pumice deposits; MECH:Pumice settling; TIME:initial eruption} | DIR:I\nE3 | I{IN:settled pumice; OUT:1650 cone; MECH:continued accumulation; LOC:vent; TIME:Before flank failure} | DIR:I\nE4 | I{IN:1650 cone; overlying sediment; OUT:laterally displaced flank mass; MECH:translational movement along a detachment surface; TIME:flank failure} | DIR:I\nE5 | I{IN:seawater; OUT:Directed tsunami; MECH:translational flank displacement; TIME:flank failure} | DIR:I\nE6 | T{IN:Directed tsunami wave field; Radial tsunami wave field; OUT:combined Kolumbo tsunami pattern; MECH:superimposition; TIME:after a short lag time} | DIR:T"
+      }
+    ],
+    "evolution_relation_extraction": [
+      {
+        "index": 0,
+        "record_id": "GSD_0021",
+        "input_passage": "[S1]Across stages III and IV, a Potential sliding mass becomes a displaced Potential sliding mass.[/S1]",
+        "gold_evolutions": [
+          {
+            "evidence_sent_ids": [
+              1
+            ],
+            "input_mentions": [
+              "Potential sliding mass"
+            ],
+            "output_mentions": [
+              "displaced Potential sliding mass"
+            ],
+            "time_mentions": [
+              "stages III and IV"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "record_id": "GSD_0088",
+        "input_passage": "[S1]Near the source, a Gravitational dome collapse transforms dome material into a coarse-grained block-and-ash granular flow.[/S1]\n[S2]From stage A to stage C, the coarse-grained granular flow is transformed into a bimodal fragmented mixture through Fragmentation and Rapid diffusion.[/S2]\n[S3]During Fragmentation-induced fluidisation, a bimodal fragmented mixture is transformed into a fluidized block-and-ash flow through Strong elutriation of ash.[/S3]\n[S4]From stage C to stage D, the fluidized block-and-ash flow is transformed into a Dilute ash-cloud surge through ash elutriation.[/S4]\n[S5]From stage C to stage D, the fluidized block-and-ash flow is transformed into a Dense underflow through Defluidisation.[/S5]\n[S6]Toward stage E, the Dense underflow is transformed into a defluidized distal underflow through Defluidisation as Excess pore pressure decreases and Effective friction coeff increases.[/S6]",
+        "gold_evolutions": [
+          {
+            "evidence_sent_ids": [
+              1
+            ],
+            "input_mentions": [
+              "dome material"
+            ],
+            "output_mentions": [
+              "coarse-grained block-and-ash granular flow"
+            ],
+            "mechanism_mentions": [
+              "Gravitational dome collapse"
+            ],
+            "location_mentions": [
+              "Near the source"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              2
+            ],
+            "input_mentions": [
+              "coarse-grained granular flow"
+            ],
+            "output_mentions": [
+              "bimodal fragmented mixture"
+            ],
+            "mechanism_mentions": [
+              "Fragmentation",
+              "Rapid diffusion"
+            ],
+            "time_mentions": [
+              "From stage A to stage C"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              3
+            ],
+            "input_mentions": [
+              "bimodal fragmented mixture"
+            ],
+            "output_mentions": [
+              "fluidized block-and-ash flow"
+            ],
+            "mechanism_mentions": [
+              "Strong elutriation of ash"
+            ],
+            "time_mentions": [
+              "Fragmentation-induced fluidisation"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              4
+            ],
+            "input_mentions": [
+              "fluidized block-and-ash flow"
+            ],
+            "output_mentions": [
+              "Dilute ash-cloud surge"
+            ],
+            "mechanism_mentions": [
+              "ash elutriation"
+            ],
+            "time_mentions": [
+              "stage C to stage D"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              5
+            ],
+            "input_mentions": [
+              "fluidized block-and-ash flow"
+            ],
+            "output_mentions": [
+              "Dense underflow"
+            ],
+            "mechanism_mentions": [
+              "Defluidisation"
+            ],
+            "time_mentions": [
+              "stage C to stage D"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              6
+            ],
+            "input_mentions": [
+              "Dense underflow"
+            ],
+            "output_mentions": [
+              "defluidized distal underflow"
+            ],
+            "mechanism_mentions": [
+              "Defluidisation",
+              "Excess pore pressure decreases",
+              "Effective friction coeff increases"
+            ],
+            "time_mentions": [
+              "Toward stage E"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "record_id": "GSD_0033",
+        "input_passage": "[S1]In panel (a), rainfall is transformed into river water through accumulated surface runoff or rainfall excess in the SWAT model.[/S1]\n[S2]In panel (a), water in the soil profile is transformed into river water through lateral flow from the hillslope outlet in the SWAT model.[/S2]\n[S3]In panel (a), water in the soil profile is transformed into shallow aquifer water through seepage from the soil profile in the SWAT model.[/S3]\n[S4]In panel (a), shallow aquifer water is transformed into river water through groundwater flow or base flow into the main channel in the SWAT model.[/S4]\n[S5]In panel (a), shallow aquifer water is transformed into deep aquifer water through percolation into the deep aquifer in the SWAT model.[/S5]\n[S6]In panel (b), water from the bottom of the soil profile is transformed into water stored in the epikarst zone through seepage into the epikarst zone in the modified SWAT model.[/S6]\n[S7]In panel (b), water stored in the epikarst zone is transformed into shallow aquifer water through seepage into the shallow aquifer in the modified SWAT model.[/S7]\n[S8]In panel (b), water stored in the epikarst zone is transformed into karst spring flow entering the river through spring discharge in the modified SWAT model.[/S8]",
+        "gold_evolutions": [
+          {
+            "evidence_sent_ids": [
+              1
+            ],
+            "input_mentions": [
+              "rainfall"
+            ],
+            "output_mentions": [
+              "river water"
+            ],
+            "mechanism_mentions": [
+              "accumulated surface runoff or rainfall excess"
+            ],
+            "location_mentions": [
+              "panel (a)",
+              "SWAT model"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              2
+            ],
+            "input_mentions": [
+              "water in the soil profile"
+            ],
+            "output_mentions": [
+              "river water"
+            ],
+            "mechanism_mentions": [
+              "lateral flow from the hillslope outlet"
+            ],
+            "location_mentions": [
+              "panel (a)",
+              "SWAT model"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              3
+            ],
+            "input_mentions": [
+              "water in the soil profile"
+            ],
+            "output_mentions": [
+              "shallow aquifer water"
+            ],
+            "mechanism_mentions": [
+              "seepage from the soil profile"
+            ],
+            "location_mentions": [
+              "panel (a)",
+              "SWAT model"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              4
+            ],
+            "input_mentions": [
+              "shallow aquifer water"
+            ],
+            "output_mentions": [
+              "river water"
+            ],
+            "mechanism_mentions": [
+              "groundwater flow or base flow into the main channel"
+            ],
+            "location_mentions": [
+              "panel (a)",
+              "SWAT model"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              5
+            ],
+            "input_mentions": [
+              "shallow aquifer water"
+            ],
+            "output_mentions": [
+              "deep aquifer water"
+            ],
+            "mechanism_mentions": [
+              "percolation into the deep aquifer"
+            ],
+            "location_mentions": [
+              "panel (a)",
+              "SWAT model"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              6
+            ],
+            "input_mentions": [
+              "water from the bottom of the soil profile"
+            ],
+            "output_mentions": [
+              "water stored in the epikarst zone"
+            ],
+            "mechanism_mentions": [
+              "seepage into the epikarst zone"
+            ],
+            "location_mentions": [
+              "panel (b)",
+              "modified SWAT model"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              7
+            ],
+            "input_mentions": [
+              "water stored in the epikarst zone"
+            ],
+            "output_mentions": [
+              "shallow aquifer water"
+            ],
+            "mechanism_mentions": [
+              "seepage into the shallow aquifer"
+            ],
+            "location_mentions": [
+              "panel (b)",
+              "modified SWAT model"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              8
+            ],
+            "input_mentions": [
+              "water stored in the epikarst zone"
+            ],
+            "output_mentions": [
+              "karst spring flow entering the river"
+            ],
+            "mechanism_mentions": [
+              "spring discharge"
+            ],
+            "location_mentions": [
+              "panel (b)",
+              "modified SWAT model"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "record_id": "ELSEVIER_GEOM_0001",
+        "input_passage": "[S1]From the Neoproterozoic (Ediacaran) stage in panel A to the Brasiliano Orogeny in panel B, in the Lagoa Santa–Sete Lagoas karst region, undeformed carbonate and metapelitic units are transformed into a tectono-structural framework of faulted and fractured rocks through tectonic deformation and uplift.[/S1]\n[S2]During the Paleogene–Neogene stage in panel C at Santa Helena ridge, the tectono-structural framework is transformed into a dissected landscape with metapelite latosols through denudation.[/S2]\n[S3]During the Quaternary (Pleistocene) stage in panel D in the carbonate terrain beneath Santa Helena ridge, the dissected landscape with metapelite latosols is transformed into a karstified carbonate aquifer with dolines and lakes through karstification and speleogenesis.[/S3]\n[S4]During the Quaternary (Holocene) stage in panel E, water in the perched aquifer contributes to recharge of the subjacent semi-confined karst aquifer through infiltration and groundwater flow across the dolines and lakes of the Lagoa Santa–Sete Lagoas karst region.[/S4]",
+        "gold_evolutions": [
+          {
+            "evidence_sent_ids": [
+              1
+            ],
+            "input_mentions": [
+              "undeformed carbonate and metapelitic units"
+            ],
+            "output_mentions": [
+              "tectono-structural framework of faulted and fractured rocks"
+            ],
+            "mechanism_mentions": [
+              "tectonic deformation and uplift"
+            ],
+            "location_mentions": [
+              "Lagoa Santa–Sete Lagoas karst region"
+            ],
+            "time_mentions": [
+              "From the Neoproterozoic (Ediacaran) stage",
+              "Brasiliano Orogeny"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              2
+            ],
+            "input_mentions": [
+              "tectono-structural framework"
+            ],
+            "output_mentions": [
+              "dissected landscape with metapelite latosols"
+            ],
+            "mechanism_mentions": [
+              "denudation"
+            ],
+            "location_mentions": [
+              "Santa Helena ridge"
+            ],
+            "time_mentions": [
+              "Paleogene–Neogene stage"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              3
+            ],
+            "input_mentions": [
+              "dissected landscape with metapelite latosols"
+            ],
+            "output_mentions": [
+              "karstified carbonate aquifer with dolines and lakes"
+            ],
+            "mechanism_mentions": [
+              "karstification and speleogenesis"
+            ],
+            "location_mentions": [
+              "carbonate terrain beneath Santa Helena ridge"
+            ],
+            "time_mentions": [
+              "Quaternary (Pleistocene) stage"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              4
+            ],
+            "input_mentions": [
+              "water in the perched aquifer"
+            ],
+            "output_mentions": [
+              "recharge of the subjacent semi-confined karst aquifer"
+            ],
+            "mechanism_mentions": [
+              "infiltration and groundwater flow"
+            ],
+            "location_mentions": [
+              "dolines and lakes of the Lagoa Santa–Sete Lagoas karst region"
+            ],
+            "time_mentions": [
+              "Quaternary (Holocene) stage"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "record_id": "GSD_0020",
+        "input_passage": "[S1]In the southern coastal sector, Talus is transformed into reactivated Talus through debris flow and fall.[/S1]\n[S2]In the northern coastal sector, Talus is transformed into reactivated Talus through debris avalanche and slide.[/S2]\n[S3]In the northern coastal sector, coastal slope material is transformed into a Scarp through Gravity-driven deformation with flexural toppling and buckling.[/S3]\n[S4]In the northern coastal sector, coastal slope material is transformed into a Trench through First-time slope collapse with rock avalanche and slide.[/S4]",
+        "gold_evolutions": [
+          {
+            "evidence_sent_ids": [
+              1
+            ],
+            "input_mentions": [
+              "Talus"
+            ],
+            "output_mentions": [
+              "reactivated Talus"
+            ],
+            "mechanism_mentions": [
+              "debris flow and fall"
+            ],
+            "location_mentions": [
+              "southern coastal sector"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              2
+            ],
+            "input_mentions": [
+              "Talus"
+            ],
+            "output_mentions": [
+              "reactivated Talus"
+            ],
+            "mechanism_mentions": [
+              "debris avalanche and slide"
+            ],
+            "location_mentions": [
+              "northern coastal sector"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              3
+            ],
+            "input_mentions": [
+              "coastal slope material"
+            ],
+            "output_mentions": [
+              "Scarp"
+            ],
+            "mechanism_mentions": [
+              "Gravity-driven deformation",
+              "flexural toppling",
+              "buckling"
+            ],
+            "location_mentions": [
+              "northern coastal sector"
+            ]
+          },
+          {
+            "evidence_sent_ids": [
+              4
+            ],
+            "input_mentions": [
+              "coastal slope material"
+            ],
+            "output_mentions": [
+              "Trench"
+            ],
+            "mechanism_mentions": [
+              "First-time slope collapse",
+              "rock avalanche and slide"
+            ],
+            "location_mentions": [
+              "northern coastal sector"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 15,
+        "record_id": "GSD_0064",
+        "input_passage": "",
+        "gold_evolutions": []
+      }
+    ]
+  }
+}

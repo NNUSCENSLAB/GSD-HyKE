@@ -1,0 +1,1896 @@
+[
+  {
+    "index": 0,
+    "sample_id": "FIG-041",
+    "image": "test_images/old_00__GSD_0005__GSD_0005__MDPI__G0360__geohazards-06-00069-g002__fig_002.png",
+    "paper_title": "A Comprehensive Review of Polygenetic Signatures, Methodological Advances, and Implications for Coastal Boulder Deposits (CBDs) Assessment",
+    "figure": "Figure 2",
+    "figure_caption": "Figure 2. Conceptual model illustrating the formation and reworking of mixed-origin (polygenetic) coastal boulder deposits (CBDs).",
+    "related_text": "The recognition of these mixed-origin deposits complicates traditional binary classifications and underscores the need for more nuanced interpretative frameworks (Figure 2).",
+    "description_gold": "During Stage 1 Initial tsunami emplacement, boulders at the Shorline are transported into boulders at Inland ridges through Tsunami flow. During Stage 2 Subsequent storm reworking, boulders at Inland ridges are transformed into a Composite field of mixed-age and mixed-orientation boulders through Storm waves.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "boulders at the Shorline"
+        ],
+        "output_mentions": [
+          "boulders at Inland ridges"
+        ],
+        "mechanism_mentions": [
+          "Tsunami flow"
+        ],
+        "location_mentions": [
+          "Shorline",
+          "Inland ridges"
+        ],
+        "time_mentions": [
+          "Stage 1 Initial tsunami emplacement"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "boulders at Inland ridges"
+        ],
+        "output_mentions": [
+          "Composite field of mixed-age and mixed-orientation boulders"
+        ],
+        "mechanism_mentions": [
+          "Storm waves"
+        ],
+        "location_mentions": [
+          "Inland ridges"
+        ],
+        "time_mentions": [
+          "Stage 2 Subsequent storm reworking"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "sample_id": "FIG-079",
+    "image": "test_images/old_01__GSD_0010__GSD_0010__MDPI__G0700__geosciences-11-00423-g007__fig_007.png",
+    "paper_title": "Influence of Historical Land-Use Change on Contemporary Channel Processes, Form, and Restoration",
+    "figure": "Figure 7",
+    "figure_caption": "Figure 7. Schematic of channel and valley evolution since European settlement along the predominant process zone types in Big Harris Creek. Evolutionary pathways based primarily on topographic and stratigraphic data collected along the drainage network.",
+    "related_text": "Although not well constrained, stabilization of the valley floor as indicated by increased tree germination (Figure 7) suggests that incision primarily occurred from the late 1940s through the 1960s. Incision, however, is continuing to occur, albeit at a slow rate, in some locations as indicated by knickpoints in resistant bedrock (Figure S6).",
+    "description_gold": "From the Precolonial Period to the Late 1800s—early 1960s (cotton era), Limited Alluvial Valley Fill in Deeply Incised Channels is modified by incision, leaving Precolonial Sediments along the valley side and Legacy Sediments on the channel floor. From the Late 1800s-early 1960s (cotton era) to the Modern Channel stage in Deeply Incised Channels, Legacy Sediments are transformed into an Inset Terrace through Incision and Minor Channel Widening. From the Precolonial Period to the Late 1800s-early 1960s (cotton era) in Entrenched Alluvial Channels over Resistant Bedrock, the Alluvial Valley Floor and Legacy Sediments are transformed into the Aggraded Alluvial Valley Floor through Aggradation. From the Late 1800s-early 1960s (cotton era) to the Modern Channel stage in Entrenched Alluvial Channels over Resistant Bedrock, the Aggraded Alluvial Valley Floor is transformed into an Inset Terrace through Incision and Bank Erosion. From the Precolonial Period to the Late 1800s-early 1960s (cotton era) in Alluvial Channels Riparian Wetlands over Resistant Bedrock, the Alluvial Valley Floor With Wetlands and Legacy Sediments are transformed into the Aggraded Alluvial Valley Floor through Minor Aggradation. From the Late 1800s-early 1960s (cotton era) to the Modern Channel stage in Alluvial Channels Riparian Wetlands over Resistant Bedrock, the Aggraded Alluvial Valley Floor is transformed into an Inset Terrace with Wetlands through Minor Incision and Lateral Migration.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "Limited Alluvial Valley Fill"
+        ],
+        "output_mentions": [
+          "Precolonial Sediments along the valley side",
+          "Legacy Sediments on the channel floor"
+        ],
+        "mechanism_mentions": [
+          "incision"
+        ],
+        "location_mentions": [
+          "Deeply Incised Channels",
+          "valley side",
+          "channel floor"
+        ],
+        "time_mentions": [
+          "From the Precolonial Period to the Late 1800s—early 1960s (cotton era)"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "Legacy Sediments"
+        ],
+        "output_mentions": [
+          "Inset Terrace"
+        ],
+        "mechanism_mentions": [
+          "Incision",
+          "Minor Channel Widening"
+        ],
+        "location_mentions": [
+          "Deeply Incised Channels"
+        ],
+        "time_mentions": [
+          "From the Late 1800s-early 1960s (cotton era) to the Modern Channel stage"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "Alluvial Valley Floor",
+          "Legacy Sediments"
+        ],
+        "output_mentions": [
+          "Aggraded Alluvial Valley Floor"
+        ],
+        "mechanism_mentions": [
+          "Aggradation"
+        ],
+        "location_mentions": [
+          "Entrenched Alluvial Channels",
+          "Resistant Bedrock"
+        ],
+        "time_mentions": [
+          "From the Precolonial Period to the Late 1800s-early 1960s (cotton era)"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          4
+        ],
+        "input_mentions": [
+          "Aggraded Alluvial Valley Floor"
+        ],
+        "output_mentions": [
+          "Inset Terrace"
+        ],
+        "mechanism_mentions": [
+          "Incision",
+          "Bank Erosion"
+        ],
+        "location_mentions": [
+          "Entrenched Alluvial Channels",
+          "Resistant Bedrock"
+        ],
+        "time_mentions": [
+          "From the Late 1800s-early 1960s (cotton era) to the Modern Channel stage"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          5
+        ],
+        "input_mentions": [
+          "Alluvial Valley Floor With Wetlands",
+          "Legacy Sediments"
+        ],
+        "output_mentions": [
+          "Aggraded Alluvial Valley Floor"
+        ],
+        "mechanism_mentions": [
+          "Minor Aggradation"
+        ],
+        "location_mentions": [
+          "Alluvial Channels Riparian Wetlands",
+          "Resistant Bedrock"
+        ],
+        "time_mentions": [
+          "From the Precolonial Period to the Late 1800s-early 1960s (cotton era)"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          6
+        ],
+        "input_mentions": [
+          "Aggraded Alluvial Valley Floor"
+        ],
+        "output_mentions": [
+          "Inset Terrace with Wetlands"
+        ],
+        "mechanism_mentions": [
+          "Minor Incision",
+          "Lateral Migration"
+        ],
+        "location_mentions": [
+          "Alluvial Channels Riparian Wetlands",
+          "Resistant Bedrock"
+        ],
+        "time_mentions": [
+          "From the Late 1800s-early 1960s (cotton era) to the Modern Channel stage"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "sample_id": "FIG-047",
+    "image": "test_images/old_03__GSD_0061__GSD_0061__NATURE_COMMUNICATIONS__N0500__s41467-023-38240-y__Fig10.png",
+    "paper_title": "Climate-controlled submarine landslides on the Antarctic continental margin",
+    "figure": "Fig. 10",
+    "figure_caption": "Fig. 10: Schematic of submarine landslide and weak layer occurrence on the Iselin Bank from the mid- to Late Miocene (1) to the Late Pleistocene (6).",
+    "related_text": "We propose that submarine landslide triggers on the Iselin Bank may be associated with changes in sedimentation following periods of climatic deterioration and/or rapid local uplift following glacial retreat, glacio-isostatic readjustment, and unloading 19 , 82 . S1b and S2 follow the Plio-Pleistocene transition (3.2–2.6 Ma) 53 and middle Miocene Climate Transition (~14 Ma) 54 , 66 . Direct evidence of major ice sheet advances across the Ross Sea continental shelf at these times are unequivocally provided by drill sites on the continental shelf 60 , 67 , 69 , followed by periods of extensive ice sheet retreat as climate rebounded in the late Miocene and early Pleistocene 31 , 83 .",
+    "description_gold": "Before 14.8 Ma on the Iselin Bank, open marine conditions, low-velocity depositional currents, enhanced current strength, and winnowing transform open-marine sediment into the WL2 weak layer. Before 3.07 Ma during the Late Pliocene, open marine conditions, reduced bottom currents, episodic dense flows, and warm-water incursions transform open-marine sediment into the WL1 weak layer. Before 2.82 Ma during the Late Pliocene, ice-proximal glacimarine deposition and increased sea ice transform slope sediment above WL1 into the WL1b weak-layer interval and glacimarine deposits. At about 1.72 Ma, S1b triggering and weak-layer failure transform the preconditioned Iselin Bank slope containing WL1b into the S1b submarine landslide and debris from S1b. After the S1b event in the Early Pleistocene, open marine conditions, reduced bottom currents, and episodic dense flows transform the S1b landslide surface into post-S1b marine deposits. In the Late Pleistocene after ice-sheet advance and retreat, S1 triggering and weak-layer failure transform the preconditioned Iselin Bank slope into the S1 submarine landslide.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "open-marine sediment"
+        ],
+        "output_mentions": [
+          "WL2 weak layer"
+        ],
+        "mechanism_mentions": [
+          "open marine conditions",
+          "low-velocity depositional currents",
+          "enhanced current strength",
+          "winnowing"
+        ],
+        "location_mentions": [
+          "Iselin Bank"
+        ],
+        "time_mentions": [
+          "Before 14.8 Ma"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "open-marine sediment"
+        ],
+        "output_mentions": [
+          "WL1 weak layer"
+        ],
+        "mechanism_mentions": [
+          "open marine conditions",
+          "reduced bottom currents",
+          "episodic dense flows",
+          "warm-water incursions"
+        ],
+        "time_mentions": [
+          "Before 3.07 Ma during the Late Pliocene"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "slope sediment above WL1"
+        ],
+        "output_mentions": [
+          "WL1b weak-layer interval",
+          "glacimarine deposits"
+        ],
+        "mechanism_mentions": [
+          "ice-proximal glacimarine deposition",
+          "increased sea ice"
+        ],
+        "time_mentions": [
+          "Before 2.82 Ma during the Late Pliocene"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          4
+        ],
+        "input_mentions": [
+          "preconditioned Iselin Bank slope containing WL1b"
+        ],
+        "output_mentions": [
+          "S1b submarine landslide",
+          "debris from S1b"
+        ],
+        "mechanism_mentions": [
+          "S1b triggering",
+          "weak-layer failure"
+        ],
+        "location_mentions": [
+          "Iselin Bank"
+        ],
+        "time_mentions": [
+          "At about 1.72 Ma"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          5
+        ],
+        "input_mentions": [
+          "S1b landslide surface"
+        ],
+        "output_mentions": [
+          "post-S1b marine deposits"
+        ],
+        "mechanism_mentions": [
+          "open marine conditions",
+          "reduced bottom currents",
+          "episodic dense flows"
+        ],
+        "time_mentions": [
+          "After the S1b event in the Early Pleistocene"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          6
+        ],
+        "input_mentions": [
+          "preconditioned Iselin Bank slope"
+        ],
+        "output_mentions": [
+          "S1 submarine landslide"
+        ],
+        "mechanism_mentions": [
+          "S1 triggering",
+          "weak-layer failure"
+        ],
+        "location_mentions": [
+          "Iselin Bank"
+        ],
+        "time_mentions": [
+          "In the Late Pleistocene after ice-sheet advance and retreat"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "sample_id": "FIG-074",
+    "image": "test_images/old_06__GSD_0070__GSD_0070__NATURE_COMMUNICATIONS__N0154__s41467-025-66695-8__Fig5.png",
+    "paper_title": "Rift linkage and inheritance determine collisional mountain belt evolution",
+    "figure": "Fig. 5",
+    "figure_caption": "Fig. 5: Model 4 with 200 km offset and same-polarity angled seeds.",
+    "related_text": "Model evolution is also similar to M3 during the inversion stage, forming a continuous mountain belt with the same plan-view shape as the pre-existing extensional basins and river-flow perpendicular to the local strike of the orogen (Fig.",
+    "description_gold": "At t = 12 Myr, same-polarity angled seeds develop asymmetric extensional basins through extension. At t = 19 Myr, asymmetric extensional basins are transformed into a continuous mountain belt through basin inversion. At t = 50 Myr, the continuous mountain belt develops same-polarity subduction, thrust sheets, and trapped lower crust and lithospheric mantle through ongoing convergence, fault linkage, and thick-skinned thrusting.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "same-polarity angled seeds"
+        ],
+        "output_mentions": [
+          "asymmetric extensional basins"
+        ],
+        "mechanism_mentions": [
+          "extension"
+        ],
+        "time_mentions": [
+          "t = 12 Myr"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "asymmetric extensional basins"
+        ],
+        "output_mentions": [
+          "continuous mountain belt"
+        ],
+        "mechanism_mentions": [
+          "basin inversion"
+        ],
+        "time_mentions": [
+          "t = 19 Myr"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "continuous mountain belt"
+        ],
+        "output_mentions": [
+          "same-polarity subduction",
+          "thrust sheets",
+          "trapped lower crust and lithospheric mantle"
+        ],
+        "mechanism_mentions": [
+          "ongoing convergence",
+          "fault linkage",
+          "thick-skinned thrusting"
+        ],
+        "time_mentions": [
+          "t = 50 Myr"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "sample_id": "FIG-064",
+    "image": "test_images/old_07__GSD_0071__GSD_0071__NATURE_COMMUNICATIONS__N0157__s41467-025-66695-8__Fig8.png",
+    "paper_title": "Rift linkage and inheritance determine collisional mountain belt evolution",
+    "figure": "Fig. 8",
+    "figure_caption": "Fig. 8: Diagrams showing the typical evolutionary characteristics of linkage during rift basin inversion.",
+    "related_text": "Using coupled geodynamic-landscape evolution models and a force-minimisation analysis, we investigated the 3D aspects of extensional inheritance on mountain building, with a focus on how offset linked rift basins form and influence subsequent orogenesis.",
+    "description_gold": "During Juvenile Linkage, No linkage sub-basins develop Local basins through extension. At Mature Linkage, Local basins are transformed into a Linked basin through basin linkage during extension. During Juvenile Inversion with opposite polarity subduction, a Linked basin is transformed into Continuous elevated topography through basin inversion. During Mature Inversion with opposite polarity subduction, Continuous elevated topography is transformed into a Topographic low in centre through subduction. During Juvenile Inversion with same polarity subduction, a Linked basin is transformed into Continuous elevated topography through basin inversion. During Mature Inversion with same polarity subduction, Continuous elevated topography is transformed into Continuous high topography through subduction.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "No linkage sub-basins"
+        ],
+        "output_mentions": [
+          "Local basins"
+        ],
+        "mechanism_mentions": [
+          "extension"
+        ],
+        "time_mentions": [
+          "Juvenile Linkage"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "Local basins"
+        ],
+        "output_mentions": [
+          "Linked basin"
+        ],
+        "mechanism_mentions": [
+          "basin linkage",
+          "extension"
+        ],
+        "time_mentions": [
+          "Mature Linkage"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "Linked basin"
+        ],
+        "output_mentions": [
+          "Continuous elevated topography"
+        ],
+        "mechanism_mentions": [
+          "basin inversion"
+        ],
+        "time_mentions": [
+          "Juvenile Inversion with opposite polarity subduction"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          4
+        ],
+        "input_mentions": [
+          "Continuous elevated topography"
+        ],
+        "output_mentions": [
+          "Topographic low in centre"
+        ],
+        "mechanism_mentions": [
+          "subduction"
+        ],
+        "time_mentions": [
+          "Mature Inversion with opposite polarity subduction"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          5
+        ],
+        "input_mentions": [
+          "Linked basin"
+        ],
+        "output_mentions": [
+          "Continuous elevated topography"
+        ],
+        "mechanism_mentions": [
+          "basin inversion"
+        ],
+        "time_mentions": [
+          "Juvenile Inversion with same polarity subduction"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          6
+        ],
+        "input_mentions": [
+          "Continuous elevated topography"
+        ],
+        "output_mentions": [
+          "Continuous high topography"
+        ],
+        "mechanism_mentions": [
+          "subduction"
+        ],
+        "time_mentions": [
+          "Mature Inversion with same polarity subduction"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "sample_id": "FIG-059",
+    "image": "test_images/old_08__GSD_0078__GSD_0078__NATURE_COMMUNICATIONS__N0151__s41467-025-66695-8__Fig2.png",
+    "paper_title": "Rift linkage and inheritance determine collisional mountain belt evolution",
+    "figure": "Fig. 2",
+    "figure_caption": "Fig. 2: Model 1 with 0 km offset and simple seeds.",
+    "related_text": "At the end of the extension phase, the continuous rift system shows full crustal break-up with more offset in the weak seed domains than in the model centre (Fig. 2 c), the model grows by subduction of the western lithospheric mantle, and formation of thick-skinned crustal thrust sheets originating from the western, pro-side of the orogen.",
+    "description_gold": "During extension, two grabens are transformed into one cylindrical rift through propagation and linkage. During the inversion stage, symmetric rift faults are transformed into a small juvenile mountain belt through reactivation. During mountain building, the juvenile mountain belt develops thick-skinned crustal thrust sheets through subduction and thick-skinned thrusting.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "two grabens"
+        ],
+        "output_mentions": [
+          "one cylindrical rift"
+        ],
+        "mechanism_mentions": [
+          "propagation",
+          "linkage"
+        ],
+        "time_mentions": [
+          "During extension"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "symmetric rift faults"
+        ],
+        "output_mentions": [
+          "small juvenile mountain belt"
+        ],
+        "mechanism_mentions": [
+          "reactivation"
+        ],
+        "time_mentions": [
+          "inversion stage"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "juvenile mountain belt"
+        ],
+        "output_mentions": [
+          "thick-skinned crustal thrust sheets"
+        ],
+        "mechanism_mentions": [
+          "subduction",
+          "thick-skinned thrusting"
+        ],
+        "time_mentions": [
+          "During mountain building"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "sample_id": "FIG-094",
+    "image": "test_images/old_09__GSD_0079__GSD_0079__NATURE_COMMUNICATIONS__N0152__s41467-025-66695-8__Fig3.png",
+    "paper_title": "Rift linkage and inheritance determine collisional mountain belt evolution",
+    "figure": "Fig. 3",
+    "figure_caption": "Fig. 3: Model 2 with 400 km offset and simple seeds.",
+    "related_text": "At the end of the extension phase, the western rift shows full crustal break-up near the northern boundary, and less extension near the southern boundary (Fig. With ongoing convergence, the western, main mountain belt behaves similarly to Model 1: It grows by one-sided subduction and formation of thick-skinned thrust sheets originating primarily from the pro-side with translation of the orogen towards the west.",
+    "description_gold": "During extension, two isolated rift basins are transformed into an aborted eastern rift basin and a main western rift through extension. During the inversion phase, the eastern aborted rift is transformed into a small and low mountain belt through inversion. With ongoing convergence, the main mountain belt develops thick-skinned thrust sheets through one-sided subduction and thick-skinned thrusting.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "two isolated rift basins"
+        ],
+        "output_mentions": [
+          "aborted eastern rift basin",
+          "main western rift"
+        ],
+        "mechanism_mentions": [
+          "extension"
+        ],
+        "time_mentions": [
+          "During extension"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "eastern aborted rift"
+        ],
+        "output_mentions": [
+          "small and low mountain belt"
+        ],
+        "mechanism_mentions": [
+          "inversion"
+        ],
+        "time_mentions": [
+          "inversion phase"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "main mountain belt"
+        ],
+        "output_mentions": [
+          "thick-skinned thrust sheets"
+        ],
+        "mechanism_mentions": [
+          "one-sided subduction",
+          "thick-skinned thrusting"
+        ],
+        "time_mentions": [
+          "With ongoing convergence"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "sample_id": "FIG-060",
+    "image": "test_images/old_10__GSD_0080__GSD_0080__NATURE_COMMUNICATIONS__N0153__s41467-025-66695-8__Fig4.png",
+    "paper_title": "Rift linkage and inheritance determine collisional mountain belt evolution",
+    "figure": "Fig. 4",
+    "figure_caption": "Fig. 4: Model 3 with 200 km offset and simple seeds.",
+    "related_text": "With ongoing extension, the two rift basins propagate and link after 6 Myr of model evolution. This mechanism leads to orogen growth and translation towards the west in the southern part of the model, and growth and translation towards the east in the northern part, reversing the inherited rift structure.",
+    "description_gold": "During extension, two weak seeds develop two offset rift basins through extension. With ongoing extension, two offset rift basins are transformed into a linked and continuous rift basin through propagation and linkage. During the inversion stage, extensional structures are transformed into a small and continuous mountain belt through reactivation. With continued shortening, the continuous mountain belt develops a topographic low in the transfer zone through opposite-polarity subduction.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "two weak seeds"
+        ],
+        "output_mentions": [
+          "two offset rift basins"
+        ],
+        "mechanism_mentions": [
+          "extension"
+        ],
+        "time_mentions": [
+          "During extension"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "two offset rift basins"
+        ],
+        "output_mentions": [
+          "linked and continuous rift basin"
+        ],
+        "mechanism_mentions": [
+          "propagation",
+          "linkage"
+        ],
+        "time_mentions": [
+          "With ongoing extension"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "extensional structures"
+        ],
+        "output_mentions": [
+          "small and continuous mountain belt"
+        ],
+        "mechanism_mentions": [
+          "reactivation"
+        ],
+        "time_mentions": [
+          "inversion stage"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          4
+        ],
+        "input_mentions": [
+          "continuous mountain belt"
+        ],
+        "output_mentions": [
+          "topographic low in the transfer zone"
+        ],
+        "mechanism_mentions": [
+          "opposite-polarity subduction"
+        ],
+        "location_mentions": [
+          "transfer zone"
+        ],
+        "time_mentions": [
+          "With continued shortening"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "sample_id": "FIG-085",
+    "image": "test_images/old_11__GSD_0009__GSD_0009__MDPI__G0658__remotesensing-12-02243-g002__fig_002.png",
+    "paper_title": "Combining Satellite Multispectral Imagery and Topographic Data for the Detection and Mapping of Fluvial Avulsion Processes in Lowland Areas",
+    "figure": "Figure 2",
+    "figure_caption": "Figure 2. Conceptual sketch of a typica fan-shaped crevasse splays due to a levee break at the external zone of a river belt. The along-dip crevasse sub-division adopted in this work is reported. Direction and terminology for the altimetric profiles elaborated in this work is also shown. Keys: XX’: along-dip direction; YY’ cross direction.",
+    "related_text": "Moreover, the roughly perpendicular development of the crevasse splays relative to the main watercourse, especially in the outer bank of meanders (Figure 2) revealed useful in this preliminary recognition.",
+    "description_gold": "At the external zone of a river belt, the Parent Channel develops crevasse channels through levee break. Crevasse channels are transformed into fan-shaped crevasse splays through sediment deposition across the floodplain.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "Parent Channel"
+        ],
+        "output_mentions": [
+          "crevasse channels"
+        ],
+        "mechanism_mentions": [
+          "levee break"
+        ],
+        "location_mentions": [
+          "external zone of a river belt"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "Crevasse channels"
+        ],
+        "output_mentions": [
+          "fan-shaped crevasse splays"
+        ],
+        "mechanism_mentions": [
+          "sediment deposition"
+        ],
+        "location_mentions": [
+          "floodplain"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "sample_id": "FIG-071",
+    "image": "test_images/old_13__GSD_0068__GSD_0068__NATURE_COMMUNICATIONS__N0077__s41467-026-71439-3__Fig4.png",
+    "paper_title": "Sulfur-enriched sub-arc fluids drive deep sulfur cycling in subduction zones",
+    "figure": "Fig. 4",
+    "figure_caption": "Fig. 4: Conceptual model of sulfur cycling in an oceanic subduction zone.",
+    "related_text": "This comparison indicates that approximately 25 ± 7% of the subducted sulfur is released into fluids at sub-arc depths (see “Methods”). Comparison between the slab-derived sulfur flux estimated here and global arc volcanic sulfur emissions (~16.8 Mt/yr 4 ) indicates that, on average, 70 ± 20% of sulfur released during arc magmatism can be attributed to slab-derived fluid addition (see “Methods”).",
+    "description_gold": "At the Mid-ocean ridge, asthenospheric material is transformed into newly formed oceanic crust through Asthenosphere upwelling. Before subduction, oceanic crust, sediments, and mantle are transformed into sulfur-enriched altered oceanic crust, sulfur-enriched sediments, and sulfur-enriched serpentinised mantle through Seawater alteration and slab sulfur enrichment. At sub-arc depths, altered oceanic crust is transformed into sulfur-rich slab-derived fluids through dehydration. At sub-arc depths, sulfur-rich slab-derived fluids transfer approximately 25% of the initial slab sulfur into metasomatized sub-arc mantle through fluid addition. Along the descending slab, sulfur not transferred by sub-arc fluids is partitioned into sulfur released at shallow depths or sulfur retained in the slab and transported into the deep mantle through shallow release or continued slab subduction. At the volcanic arc, sulfur stored in metasomatized sub-arc mantle is transformed into approximately 70% of the volcanic sulfur output through arc volcanism. At the volcanic arc, sulfur from other subducted sources or mantle inheritance is transformed into approximately 30% of the volcanic sulfur output through arc volcanism.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "asthenospheric material"
+        ],
+        "output_mentions": [
+          "newly formed oceanic crust"
+        ],
+        "mechanism_mentions": [
+          "Asthenosphere upwelling"
+        ],
+        "location_mentions": [
+          "Mid-ocean ridge"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "oceanic crust",
+          "sediments",
+          "mantle"
+        ],
+        "output_mentions": [
+          "sulfur-enriched altered oceanic crust",
+          "sulfur-enriched sediments",
+          "sulfur-enriched serpentinised mantle"
+        ],
+        "mechanism_mentions": [
+          "Seawater alteration",
+          "slab sulfur enrichment"
+        ],
+        "time_mentions": [
+          "Before subduction"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "altered oceanic crust"
+        ],
+        "output_mentions": [
+          "sulfur-rich slab-derived fluids"
+        ],
+        "mechanism_mentions": [
+          "dehydration"
+        ],
+        "location_mentions": [
+          "sub-arc depths"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          4
+        ],
+        "input_mentions": [
+          "sulfur-rich slab-derived fluids",
+          "initial slab sulfur"
+        ],
+        "output_mentions": [
+          "metasomatized sub-arc mantle"
+        ],
+        "mechanism_mentions": [
+          "fluid addition"
+        ],
+        "location_mentions": [
+          "sub-arc depths"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          5
+        ],
+        "input_mentions": [
+          "sulfur not transferred by sub-arc fluids"
+        ],
+        "output_mentions": [
+          "sulfur released at shallow depths",
+          "sulfur retained in the slab and transported into the deep mantle"
+        ],
+        "mechanism_mentions": [
+          "shallow release",
+          "continued slab subduction"
+        ],
+        "location_mentions": [
+          "Along the descending slab"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          6
+        ],
+        "input_mentions": [
+          "sulfur stored in metasomatized sub-arc mantle"
+        ],
+        "output_mentions": [
+          "approximately 70% of the volcanic sulfur output"
+        ],
+        "mechanism_mentions": [
+          "arc volcanism"
+        ],
+        "location_mentions": [
+          "volcanic arc"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          7
+        ],
+        "input_mentions": [
+          "sulfur from other subducted sources",
+          "mantle inheritance"
+        ],
+        "output_mentions": [
+          "approximately 30% of the volcanic sulfur output"
+        ],
+        "mechanism_mentions": [
+          "arc volcanism"
+        ],
+        "location_mentions": [
+          "volcanic arc"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "sample_id": "FIG-089",
+    "image": "test_images/old_16__GSD_0081__GSD_0081__NATURE_COMMUNICATIONS__N0155__s41467-025-66695-8__Fig6.png",
+    "paper_title": "Rift linkage and inheritance determine collisional mountain belt evolution",
+    "figure": "Fig. 6",
+    "figure_caption": "Fig. 6: Block diagrams explaining and quantifying model behaviour.",
+    "related_text": "Our models show that rift basins tend to link when the lateral offset between them is small to moderate, but fail to link at large offsets, which is consistent with previous work 28 , 29 , 30 , 31 . From this initial segment, deformation can follow two possible paths: (a) it links to a second weak zone and utilises the segmented path \\(D{\\prime}+{D}_{seed}\\) , requiring a force F L i n k , or (b) it bypasses the linkage and progresses directly to the model boundary along path D b , requiring a force F N o L i n k .",
+    "description_gold": "In panel (a), with small to moderate lateral offset, separated Rift basins are transformed into a linked rift-basin system through Basin Linkage along the segmented weak-zone path and minimisation of deformational work. In panel (a), with large lateral offset, deformation from an initial Rift basin is transformed into a boundary-directed unlinked rift path through No linkage and bypass of the second weak zone along Db. In panel (b), during Subduction polarity selection in inversion of intermediate-offset linked Rift basins, conjugate rift-bounding faults are transformed into an opposite-polarity subduction interface through Inner Fault Linkage (LII) and minimisation of deformational work. In panel (b), during Subduction polarity selection, where a same-dipping inherited shear zone is sufficiently weak, conjugate rift-bounding faults are transformed into a same-polarity subduction interface through Same-dip Fault Linkage (LIO) and preferential reactivation of the pre-existing weakness. In panel (b), during Subduction polarity selection under the least energetically favourable pathway, outer rift-bounding faults are transformed into an opposite-polarity subduction interface through Outer Fault Linkage (LOO).",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "separated Rift basins"
+        ],
+        "output_mentions": [
+          "linked rift-basin system"
+        ],
+        "mechanism_mentions": [
+          "Basin Linkage",
+          "minimisation of deformational work"
+        ],
+        "location_mentions": [
+          "panel (a)",
+          "segmented weak-zone path"
+        ],
+        "time_mentions": [
+          "with small to moderate lateral offset"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "deformation from an initial Rift basin"
+        ],
+        "output_mentions": [
+          "boundary-directed unlinked rift path"
+        ],
+        "mechanism_mentions": [
+          "No linkage",
+          "bypass of the second weak zone along Db"
+        ],
+        "location_mentions": [
+          "panel (a)"
+        ],
+        "time_mentions": [
+          "with large lateral offset"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "conjugate rift-bounding faults"
+        ],
+        "output_mentions": [
+          "opposite-polarity subduction interface"
+        ],
+        "mechanism_mentions": [
+          "Inner Fault Linkage (LII)",
+          "minimisation of deformational work"
+        ],
+        "location_mentions": [
+          "panel (b)"
+        ],
+        "time_mentions": [
+          "Subduction polarity selection in inversion of intermediate-offset linked Rift basins"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          4
+        ],
+        "input_mentions": [
+          "conjugate rift-bounding faults"
+        ],
+        "output_mentions": [
+          "same-polarity subduction interface"
+        ],
+        "mechanism_mentions": [
+          "Same-dip Fault Linkage (LIO)",
+          "preferential reactivation of the pre-existing weakness"
+        ],
+        "location_mentions": [
+          "panel (b)"
+        ],
+        "time_mentions": [
+          "Subduction polarity selection",
+          "where a same-dipping inherited shear zone is sufficiently weak"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          5
+        ],
+        "input_mentions": [
+          "outer rift-bounding faults"
+        ],
+        "output_mentions": [
+          "opposite-polarity subduction interface"
+        ],
+        "mechanism_mentions": [
+          "Outer Fault Linkage (LOO)"
+        ],
+        "location_mentions": [
+          "panel (b)"
+        ],
+        "time_mentions": [
+          "Subduction polarity selection",
+          "under the least energetically favourable pathway"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "sample_id": "FIG-048",
+    "image": "test_images/old_17__NATURE_NC_0007__0035__N4376__s41467-025-65714-y__Fig3.png",
+    "paper_title": "Thinning Antarctic glaciers expose high-altitude nunataks delivering more bioavailable iron to the Southern Ocean",
+    "figure": "Fig. 3",
+    "figure_caption": "Fig. 3: Schematic diagram depicting sediment and iron (Fe) transfer through Antarctic glacial margins. Panel a represents a situation where there are no exposed mountains (like the area to the west of our study site, and a large proportion of Antarctica), so there are no surface sediments rich in dithionite-extractable Fe (FeD). Sediments can only be sourced from the ice/bed interface when glacial thermal conditions permit entrainment. While most sediment will be transported along the bed, as basal load, englacial transport may occur (if glacial conditions permit entrainment into the ice). Panel b represents an ice flow through exposed coastal margin mountains (analogous to much of Dronning Maud Land, including our subaerially exposed study site). Here, sediments derived from weathering and mass movement processes in the mountains are either transported supraglacially or incorporated in ice flow through burial by subsequent snow/rock fall. Just like panel a, sediments are also transported englacially, and along the glacier bed. Whilst both scenarios deliver nutrients to the Southern Ocean, thick ice sheets flowing over buried mountains will mainly transport sediments as basal load, so deposition will be released as subsurface melt close to the grounding line, where light is more limited for photosynthesis (and resultant CO 2 drawdown). However, where ice is thinner and bedrock is exposed, more sediments (rich in both FeA and FeD) will be available for entrainment, where a larger percentage of supra-and englacial transport will deliver more nutrient-rich sediment to the open ocean, where it can melt and rain out of free-floating icebergs.",
+    "related_text": "Figure 3a depicts a thick ice sheet where the underlying mountains are covered in ice – like the area to the west of our study site (see Fig.",
+    "description_gold": "In panel (a), Buried mountains overlie the ice/bed interface, where sediment is transformed into sediment deposited close to the grounding line or beneath floating ice through glacial entrainment, basal transport, and deposition. Sediment deposited close to the grounding line or beneath floating ice is transformed into sediment-derived iron in the well-lit surface ocean through resuspension by under-ice currents and transport beyond the ice shelf front. At nunataks, mountain rock is transformed into FeD-rich nunatak sediments through weathering and mass movement processes. At nunataks, FeD-rich nunatak sediments are transformed into nutrient-rich sediment in the open ocean through supraglacial, englacial, and basal transport and release from free-floating icebergs.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "sediment"
+        ],
+        "output_mentions": [
+          "sediment deposited close to the grounding line or beneath floating ice"
+        ],
+        "mechanism_mentions": [
+          "glacial entrainment",
+          "basal transport",
+          "deposition"
+        ],
+        "location_mentions": [
+          "ice/bed interface",
+          "grounding line",
+          "floating ice"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "Sediment deposited close to the grounding line or beneath floating ice"
+        ],
+        "output_mentions": [
+          "sediment-derived iron"
+        ],
+        "mechanism_mentions": [
+          "resuspension by under-ice currents",
+          "transport beyond the ice shelf front"
+        ],
+        "location_mentions": [
+          "well-lit surface ocean",
+          "ice shelf front"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "mountain rock"
+        ],
+        "output_mentions": [
+          "FeD-rich nunatak sediments"
+        ],
+        "mechanism_mentions": [
+          "weathering",
+          "mass movement processes"
+        ],
+        "location_mentions": [
+          "nunataks"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          4
+        ],
+        "input_mentions": [
+          "FeD-rich nunatak sediments"
+        ],
+        "output_mentions": [
+          "nutrient-rich sediment"
+        ],
+        "mechanism_mentions": [
+          "supraglacial, englacial, and basal transport",
+          "release from free-floating icebergs"
+        ],
+        "location_mentions": [
+          "nunataks",
+          "open ocean"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "sample_id": "FIG-044",
+    "image": "test_images/old_18__NATURE_NC_0012__MDPI__G0016__land-14-01994-g007__fig_007.png",
+    "paper_title": "Assessing Variations in River Networks Under Urbanization Across Metropolitan Plains Using a Multi-Metric Approach",
+    "figure": "Figure 7",
+    "figure_caption": "Figure 7. Three evolution stages for river networks in urbanized areas: natural river network, altered river network with flood threats, and restored river network with mitigated urban hydrological process.",
+    "related_text": "Vegetation destruction, reduced river-network connectivity, and increased impervious surface area sharpen flood peaks; river-system recovery lowers flood peaks and improves regulation capacity.",
+    "description_gold": "In panel (a), a Natural river system is transformed into a Natural storm-flood process through stable hydrological processes. In panel (b) in urbanized areas, a Natural river system is transformed into an Altered river system and an Urban stream syndrome through vegetation destruction, reduced river-network connectivity, and increased impervious surface area, producing an Earlier and higher flood peak and Underground runoff reduction. In panel (c) in urbanized areas, an Altered river system is transformed into a Restored river system and a Mitigated urban hydrological process through river-system recovery, producing a Lagging and weakened flood peak and Underground runoff increase.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "Natural river system"
+        ],
+        "output_mentions": [
+          "Natural storm-flood process"
+        ],
+        "mechanism_mentions": [
+          "stable hydrological processes"
+        ],
+        "location_mentions": [
+          "panel (a)"
+        ],
+        "time_mentions": [
+          "panel (a)"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "Natural river system"
+        ],
+        "output_mentions": [
+          "Altered river system",
+          "Urban stream syndrome",
+          "Earlier and higher flood peak",
+          "Underground runoff reduction"
+        ],
+        "mechanism_mentions": [
+          "vegetation destruction",
+          "reduced river-network connectivity",
+          "increased impervious surface area"
+        ],
+        "location_mentions": [
+          "panel (b)",
+          "urbanized areas"
+        ],
+        "time_mentions": [
+          "panel (b)"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "Altered river system"
+        ],
+        "output_mentions": [
+          "Restored river system",
+          "Mitigated urban hydrological process",
+          "Lagging and weakened flood peak",
+          "Underground runoff increase"
+        ],
+        "mechanism_mentions": [
+          "river-system recovery"
+        ],
+        "location_mentions": [
+          "panel (c)",
+          "urbanized areas"
+        ],
+        "time_mentions": [
+          "panel (c)"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "sample_id": "FIG-078",
+    "image": "test_images/old_19__NATURE_NC_0023__0116__N1613__s41467-021-21723-1__Fig5.png",
+    "paper_title": "Caribbean plate tilted and actively dragged eastwards by low-viscosity asthenospheric flow",
+    "figure": "Fig. 5",
+    "figure_caption": "Fig. 5: Time-evolution cartoon of Caribbean asthenosphere and dynamic topography. Hotter asthenosphere sourced from the Galapagos plume flowed eastwards through the Central America slab window towards the Caribbean and produced an eastward dynamic tilt of the Earth’s surface. a At 8.5 Ma, prior to the slab window opening, the regional upper mantle was segmented by subducted slabs. b At ~8.5 Ma, the opening of the Panama slab window allowed eastward asthenospheric flows that were driven by pressure differences between the upwelling Galapagos plume to the west, and the subduction downwelling to the east. This geological event terminated the arc at the Panama land bridge and began the dynamic uplift of the Caribbean. c At present, the leading edge of hot asthenosphere imaged by full-waveform tomography 25 has reached the Beata ridge. Eastward propagation of hot asthenosphere across the region produced time-transgressive back-arc magmatism within Central America that has a clear Galapagos isotopic signature 26 . Integration of these space-time constraints allows us to obtain the flow velocity of the Galapagos hot material which, together with the independent estimates of the driving pressure gradient and the thickness of the asthenosphere, constrain the absolute viscosity of the asthenosphere under the Caribbean to ~3*10 18 Pa s.",
+    "related_text": "The blue-shaded area shows the uncertainty of the velocity profile induced by the uncertainty in the pressure gradient.",
+    "description_gold": "At ~8.5 Ma in panel b, hot asthenosphere from the Galapagos plume produces Initial flow through slab window and a Tilted Lithosphere through opening of the Panama slab window, Upwelling, and Downwelling. At ~8.5 Ma in panel b, the Central American Arc is transformed into an Extinct Arc through opening of the Panama slab window. From ~8.5 Ma to 0 Ma in panel c, Initial flow through slab window produces Dynamic uplift ~300m of the Caribbean through eastward asthenospheric flow. From ~8.5 Ma to 0 Ma in panel c, Initial flow through slab window is transformed into the Leading edge of hot asthenosphere at the Beata Ridge and Caribbean backarc magmatism migration through eastward propagation.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "hot asthenosphere"
+        ],
+        "output_mentions": [
+          "Initial flow through slab window",
+          "Tilted Lithosphere"
+        ],
+        "mechanism_mentions": [
+          "opening of the Panama slab window",
+          "Upwelling",
+          "Downwelling"
+        ],
+        "location_mentions": [
+          "Galapagos plume",
+          "Panama slab window"
+        ],
+        "time_mentions": [
+          "At ~8.5 Ma",
+          "panel b"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "Central American Arc"
+        ],
+        "output_mentions": [
+          "Extinct Arc"
+        ],
+        "mechanism_mentions": [
+          "opening of the Panama slab window"
+        ],
+        "location_mentions": [
+          "Panama slab window"
+        ],
+        "time_mentions": [
+          "At ~8.5 Ma",
+          "panel b"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "Initial flow through slab window"
+        ],
+        "output_mentions": [
+          "Dynamic uplift ~300m"
+        ],
+        "mechanism_mentions": [
+          "eastward asthenospheric flow"
+        ],
+        "location_mentions": [
+          "Caribbean"
+        ],
+        "time_mentions": [
+          "From ~8.5 Ma to 0 Ma",
+          "panel c"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          4
+        ],
+        "input_mentions": [
+          "Initial flow through slab window"
+        ],
+        "output_mentions": [
+          "Leading edge of hot asthenosphere",
+          "Caribbean backarc magmatism migration"
+        ],
+        "mechanism_mentions": [
+          "eastward propagation"
+        ],
+        "location_mentions": [
+          "Beata Ridge"
+        ],
+        "time_mentions": [
+          "From ~8.5 Ma to 0 Ma",
+          "panel c"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "sample_id": "FIG-046",
+    "image": "test_images/old_21__NATURE_NC_0025__0148__N1477__s41467-021-23772-y__Fig8.png",
+    "paper_title": "India-Asia collision as a driver of atmospheric CO 2 in the Cenozoic",
+    "figure": "Fig. 8",
+    "figure_caption": "Fig. 8: Major types of continental collision-derived CO 2 degassing, including metamorphic and magmatic CO 2 emissions in Tibet. Magmatic CO 2 emissions are composed of Cenozoic volcanic activity-induced CO 2 emissions and the present CO 2 degassing from the hydrothermal systems (e.g., hot spring, fault and soil micro-seepage) related to dormant volcanic fields in the Plateau. MFT main frontal thrust, MTZ mantle transition zone, SCLM sub-continental lithospheric mantle. ITS, BNS, JS, and KS are as in Fig. 1 .",
+    "related_text": "Magmatic carbon emission is mainly composed of (1) CO 2 degassing during the active volcanic period and (2) CO 2 emissions from diffuse faults, hot springs and soil micro-seepage systems during dormant volcanic periods 43 , 45 . The near-continuous time-series of modelled CO 2 fluxes from eruptions of 55 volcanic fields during the Cenozoic in Tibet (Table 1 and Fig. 7b ) reveal CO 2 degassing during active volcanic periods from 65 Ma to the present.",
+    "description_gold": "In the Tibetan mantle wedge, India subduction-derived carbonate-rich component is transformed into wehrlite-bearing mantle peridotite through metasomatism. In the Tibetan Plateau, wehrlite-bearing mantle peridotite is transformed into Magmatic CO2 emission, Volcanic CO2 emission, CO2 emission from spring, CO2 emission from fault, and CO2 flux from micro-seepage through decarbonation and CMP upwelling. Along the Indian subduction interface, subducted carbonate-rich material is transformed into Metamorphic CO2 emission through metamorphic decarbonation.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "India subduction-derived carbonate-rich component"
+        ],
+        "output_mentions": [
+          "wehrlite-bearing mantle peridotite"
+        ],
+        "mechanism_mentions": [
+          "metasomatism"
+        ],
+        "location_mentions": [
+          "Tibetan mantle wedge"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "wehrlite-bearing mantle peridotite"
+        ],
+        "output_mentions": [
+          "Magmatic CO2 emission",
+          "Volcanic CO2 emission",
+          "CO2 emission from spring",
+          "CO2 emission from fault",
+          "CO2 flux from micro-seepage"
+        ],
+        "mechanism_mentions": [
+          "decarbonation",
+          "CMP upwelling"
+        ],
+        "location_mentions": [
+          "Tibetan Plateau"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "subducted carbonate-rich material"
+        ],
+        "output_mentions": [
+          "Metamorphic CO2 emission"
+        ],
+        "mechanism_mentions": [
+          "metamorphic decarbonation"
+        ],
+        "location_mentions": [
+          "Indian subduction interface"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "sample_id": "FIG-037",
+    "image": "test_images/old_22__NATURE_NC_0026__0155__N1192__s41467-022-29058-1__Fig8.png",
+    "paper_title": "Mantle exhumation at magma-poor rifted margins controlled by frictional shear zones",
+    "figure": "Fig. 8",
+    "figure_caption": "Fig. 8: Template showing main characteristics from magma-poor spreading to magmatic spreading on Galicia-Flemish Cap margins. a Phase of mantle exhumation with the successive formation of large offset detachment faults with recurrent dip reversal. b Magmatic spreading with dominant accretion of normal oceanic crust and small offset normal faults and locally formation of detachments faults and exhumed mantle domes for ultra-slow and slow spreading rates.",
+    "related_text": "The results presented here show that the formation of exhumed mantle domes along magma-poor margins and slow to ultra-slow mid-oceanic spreading systems is controlled by the successive formation of large offset normal fault zones with on average opposing dip, with new fault zones forming above the thermal necking zone rupturing the exhumed fault surface and consequently leaving genetically linked root zones and detachment footwall scarps on either side of the conjugate margin and/or spreading center (Fig. 8a ) consistent with earlier conceptual models 4 , 8 , 10 , 13 , 14 , 18 . This genetic link is used here to establish a new interpretation of the transitional magma-poor domain along the Galicia-Flemish Cap conjugate margins indicating that seven large offset normal faults and intermittent minor episodes of magmatic addition have controlled its formation dominated by a-magmatic spreading. The new interpretation allows reconstructing the kinematic evolution of the transitional domain, the time of continental crustal breakup, and the time of inception of mature mid-ocean ridge spreading for these conjugate magma-poor margins. Magma-poor spreading is discontinued once sufficient mantle melt allows the establishment of a mature magmatic spreading center characterized by accretion of normal thickness oceanic crust and locally exhumed mantle domes (Fig. 8b ). The numerical models and new reconstruction presented here provide a new framework for understanding and interpreting magma-poor margins and ultra-slow mid-ocean ridge spreading systems.",
+    "description_gold": "During magma-poor spreading, exhumed mantle is transformed into exhumed mantle domes through successive formation of large offset normal fault zones. When sufficient mantle melt is available, magma-poor spreading is transformed into normal thickness oceanic crust through magmatic spreading and accretion.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "exhumed mantle"
+        ],
+        "output_mentions": [
+          "exhumed mantle domes"
+        ],
+        "mechanism_mentions": [
+          "successive formation of large offset normal fault zones"
+        ],
+        "time_mentions": [
+          "During magma-poor spreading"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "magma-poor spreading"
+        ],
+        "output_mentions": [
+          "normal thickness oceanic crust"
+        ],
+        "mechanism_mentions": [
+          "magmatic spreading",
+          "accretion"
+        ],
+        "time_mentions": [
+          "When sufficient mantle melt is available"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "sample_id": "FIG-101",
+    "image": "test_images/old_23__NATURE_NC_0032__0201__N2246__s41467-019-09113-0__Fig3.png",
+    "paper_title": "The causes of spatiotemporal variations in erupted fluxes and compositions along a volcanic arc",
+    "figure": "Fig. 3",
+    "figure_caption": "Fig. 3 Representative figures from different communities studying volcanoes. Left, archetypical mantle-focused subduction cartoon with an “emoji volcano” that only alludes to a shallower magmatic system. Right, archetypical upper crust-focused subduction volcano cartoon, with a “disembodied volcano”, disconnected from the deeper magma source region",
+    "related_text": "Resolving the importance of crust and mantle processes is clearly important to understanding arc-scale volcanic diversity. However, the existing methods for studying arc volcanism, dominated by detailed studies of individual volcanoes, also have limitations for addressing such arc-scale questions. For a start, much of what we know about arc volcanism is heavily leveraged by the intensive study of a relatively small number of volcanic systems.",
+    "description_gold": "In the mantle-focused subduction cartoon, altered ocean crust on a subducting slab is transformed into mantle-wedge melt through subduction-driven transfer into the mantle wedge and melting, and the melt feeds the volcano. In the upper-crust-focused cartoon, magma from deeper crustal and mantle sources is transformed into Magma reservoirs and Magma feeder systems that supply the volcano through magma ascent and storage.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "altered ocean crust on a subducting slab"
+        ],
+        "output_mentions": [
+          "mantle-wedge melt"
+        ],
+        "mechanism_mentions": [
+          "subduction-driven transfer into the mantle wedge",
+          "melting"
+        ],
+        "location_mentions": [
+          "mantle-focused subduction cartoon"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "magma from deeper crustal and mantle sources"
+        ],
+        "output_mentions": [
+          "Magma reservoirs",
+          "Magma feeder systems",
+          "volcano"
+        ],
+        "mechanism_mentions": [
+          "magma ascent",
+          "storage"
+        ],
+        "location_mentions": [
+          "upper-crust-focused cartoon"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "sample_id": "FIG-121",
+    "image": "test_images/taylor_17__0004__TAYLOR_000248_0012_10.1080_19475705.2019.1568310.jpg",
+    "paper_title": "Full article: Interactions between paleochannels and aeolian processes and their implications on aeolian dune patterns",
+    "figure": "Figure 12",
+    "figure_caption": "Figure 12. A conceptual diagram showing the interactions between aeolian and fluvial processes. We divide these interactions into three types. The first type is controlled by low stability of desert channels and long-term aeolian processes (the high of the strength of the aeolian processes is, more unstable of the channels will be), such as the long-term dried channels. The second one is controlled by middle stability of desert channels and strength of aeolian processes, such as the intermittently dried channels were dammed by aeolian dunes during the dry season. The third one is dominantly controlled by high stable desert channels, such as channels are long-termly supplied by runoff.",
+    "related_text": "Figure 12 shows that when the runoff in desert channels is low or the channels have been long-term drying up, the drying river bed will be dammed by the aeolian dunes or buried by the deposition of the aeolian sediments. Their existence will change the aeolian processes in upwind and downwind of the river definitely.",
+    "description_gold": "Paragraph:\nUnder low runoff and long-term drying, long-term aeolian processes transform desert channels into channels dammed by aeolian dunes. Under low runoff and long-term drying, deposition of aeolian sediments transforms the drying river bed into a buried river bed.\nEvent Sentences:\nUnder low runoff and long-term drying, long-term aeolian processes transform desert channels into channels dammed by aeolian dunes.\nUnder low runoff and long-term drying, deposition of aeolian sediments transforms the drying river bed into a buried river bed.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "desert channels"
+        ],
+        "output_mentions": [
+          "channels dammed by aeolian dunes"
+        ],
+        "mechanism_mentions": [
+          "long-term aeolian processes"
+        ],
+        "time_mentions": [
+          "Under low runoff and long-term drying"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "drying river bed"
+        ],
+        "output_mentions": [
+          "buried river bed"
+        ],
+        "mechanism_mentions": [
+          "deposition of aeolian sediments"
+        ],
+        "time_mentions": [
+          "Under low runoff and long-term drying"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "sample_id": "FIG-122",
+    "image": "test_images/taylor_18__0017__TAYLOR_000098_0002_10.1080_11104929.2020.1864255.jpg",
+    "paper_title": "Full article: Stability of the Northern coast of Egypt under the effect of urbanization and climate change",
+    "figure": "Figure 2",
+    "figure_caption": "Figure 2. Schematic diagram showing the sediment movement between land and sea as well as the formation of coastal sand dunes under the effect of wave, current, tide, wind and flash flood",
+    "related_text": "The sediment movement mechanism in the coastal zone shows that the offshore sandbars are created from the movement of the beach dune and berm sand under the effect of the storm waves. During periods of calm weather, the swell waves may move part of sand from offshore sources and store it back on the beach to form the beach berms as shown in Figure 2 .",
+    "description_gold": "Paragraph:\nDuring storms, storm waves transform beach dune and berm sand into offshore sandbars. During calm weather, swell waves transform sand from offshore sources into beach berms.\nEvent Sentences:\nDuring storms, storm waves transform beach dune and berm sand into offshore sandbars.\nDuring calm weather, swell waves transform sand from offshore sources into beach berms.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "beach dune and berm sand"
+        ],
+        "output_mentions": [
+          "offshore sandbars"
+        ],
+        "mechanism_mentions": [
+          "storm waves"
+        ],
+        "time_mentions": [
+          "During storms"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "sand from offshore sources"
+        ],
+        "output_mentions": [
+          "beach berms"
+        ],
+        "mechanism_mentions": [
+          "swell waves"
+        ],
+        "time_mentions": [
+          "During calm weather"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "sample_id": "FIG-123",
+    "image": "test_images/taylor_19__0079__TAYLOR_000042_0008_10.1080_19475705.2018.1508507.jpg",
+    "paper_title": "Full article: Debris flow amplification in a moraine terrace and related engineering measures in the Zongzhai Valley, Southeastern Tibetan Plateau",
+    "figure": "Figure 8",
+    "figure_caption": "Figure 8. Section morphology change in the channel during debris flow entrainment.",
+    "related_text": "None provided.",
+    "description_gold": "Paragraph:\nDuring debris flow entrainment, the initial channel section is transformed into a widened and deepened channel section.\nEvent Sentences:\nDuring debris flow entrainment, the initial channel section is transformed into a widened and deepened channel section.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "initial channel section"
+        ],
+        "output_mentions": [
+          "widened and deepened channel section"
+        ],
+        "mechanism_mentions": [
+          "debris flow entrainment"
+        ],
+        "time_mentions": [
+          "During debris flow entrainment"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "sample_id": "FIG-124",
+    "image": "test_images/taylor_20__0088__TAYLOR_000059_0014_10.1080_04353676.2022.2084591.jpg",
+    "paper_title": "Full article: A model of ice-marginal sediment-landform development at Lake Tekapo, Southern Alps, New Zealand",
+    "figure": "Figure 14",
+    "figure_caption": "Figure 14. Conceptual model to illustrate event stratigraphy. (HCF in legend = hyper-concentrated flow, SGF = sediment gravity flow).",
+    "related_text": "We propose a five-stage idealized reconstruction of depositional events and glacier dynamics in the Tekapo valley ( Table 1 ; Figure 14 ). We extrapolate this event reconstruction across the valley and so Figure 14 does not directly correspond to the sediment sequence observed.",
+    "description_gold": "Paragraph:\nDuring stage 1 ice-margin advance, glacial outwash transforms the Tekapo valley floor into E1 outwash deposits. During stage 2 ice-margin recession, lake sedimentation transforms the exposed valley floor into E2 varves beneath Lake Tekapo. During stage 3 ice-margin recession, sediment gravity flow and hyper-concentrated flow transform valley sediment into E3 and E4 deposits. During stage 4 ice-margin advance, a glaciotectonic event transforms pre-existing deposits into thrust stacks. During stage 5 ice-margin recession, subglacial mass flow transforms sediment into E6 subglacial mass-flow deposits.\nEvent Sentences:\nDuring stage 1 ice-margin advance, glacial outwash transforms the Tekapo valley floor into E1 outwash deposits.\nDuring stage 2 ice-margin recession, lake sedimentation transforms the exposed valley floor into E2 varves beneath Lake Tekapo.\nDuring stage 3 ice-margin recession, sediment gravity flow and hyper-concentrated flow transform valley sediment into E3 and E4 deposits.\nDuring stage 4 ice-margin advance, a glaciotectonic event transforms pre-existing deposits into thrust stacks.\nDuring stage 5 ice-margin recession, subglacial mass flow transforms sediment into E6 subglacial mass-flow deposits.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "Tekapo valley floor"
+        ],
+        "output_mentions": [
+          "E1 outwash deposits"
+        ],
+        "mechanism_mentions": [
+          "glacial outwash"
+        ],
+        "time_mentions": [
+          "During stage 1 ice-margin advance"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "exposed valley floor"
+        ],
+        "output_mentions": [
+          "E2 varves beneath Lake Tekapo"
+        ],
+        "mechanism_mentions": [
+          "lake sedimentation"
+        ],
+        "time_mentions": [
+          "During stage 2 ice-margin recession"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "valley sediment"
+        ],
+        "output_mentions": [
+          "E3 and E4 deposits"
+        ],
+        "mechanism_mentions": [
+          "sediment gravity flow",
+          "hyper-concentrated flow"
+        ],
+        "time_mentions": [
+          "During stage 3 ice-margin recession"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          4
+        ],
+        "input_mentions": [
+          "pre-existing deposits"
+        ],
+        "output_mentions": [
+          "thrust stacks"
+        ],
+        "mechanism_mentions": [
+          "glaciotectonic event"
+        ],
+        "time_mentions": [
+          "During stage 4 ice-margin advance"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          5
+        ],
+        "input_mentions": [
+          "sediment"
+        ],
+        "output_mentions": [
+          "E6 subglacial mass-flow deposits"
+        ],
+        "mechanism_mentions": [
+          "subglacial mass flow"
+        ],
+        "time_mentions": [
+          "During stage 5 ice-margin recession"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "sample_id": "FIG-125",
+    "image": "test_images/taylor_21__0151__TAYLOR_000172_0010_10.1080_19475705.2021.2013960.jpg",
+    "paper_title": "Full article: Progressive destabilization and triggering mechanism analysis using multiple data for Chamoli rockslide of 7 February 2021",
+    "figure": "Figure 10",
+    "figure_caption": "Figure 10. A schematic diagram of the progressive destabilization of the rockslide body owing to percolating, heaving, and detaching actions.",
+    "related_text": "Considering the geometric characteristics of the rockslide body ( Figure 9 ) and the shrinking process of ice cover ( Figure 6 ), the progressive destabilization of rockslide body is shown in Figure 10 .",
+    "description_gold": "Paragraph:\nFrom the initial phase to percolating-heaving, percolating water transforms partly ice-filled joints into enlarged ice-filled joints through frost heaving. During enhanced percolating-heaving, frost heaving transforms the jointed rockslide body into a destabilized rockslide body. During critical detaching, detaching action transforms the destabilized rockslide body into a detached rockslide block. During the sliding phase, sliding transforms the detached rockslide block into a displaced rockslide block with a reserved ice block.\nEvent Sentences:\nFrom the initial phase to percolating-heaving, percolating water transforms partly ice-filled joints into enlarged ice-filled joints through frost heaving.\nDuring enhanced percolating-heaving, frost heaving transforms the jointed rockslide body into a destabilized rockslide body.\nDuring critical detaching, detaching action transforms the destabilized rockslide body into a detached rockslide block.\nDuring the sliding phase, sliding transforms the detached rockslide block into a displaced rockslide block with a reserved ice block.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "partly ice-filled joints"
+        ],
+        "output_mentions": [
+          "enlarged ice-filled joints"
+        ],
+        "mechanism_mentions": [
+          "percolating water",
+          "frost heaving"
+        ],
+        "time_mentions": [
+          "From the initial phase to percolating-heaving"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "jointed rockslide body"
+        ],
+        "output_mentions": [
+          "destabilized rockslide body"
+        ],
+        "mechanism_mentions": [
+          "frost heaving"
+        ],
+        "time_mentions": [
+          "During enhanced percolating-heaving"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "destabilized rockslide body"
+        ],
+        "output_mentions": [
+          "detached rockslide block"
+        ],
+        "mechanism_mentions": [
+          "detaching action"
+        ],
+        "time_mentions": [
+          "During critical detaching"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          4
+        ],
+        "input_mentions": [
+          "detached rockslide block"
+        ],
+        "output_mentions": [
+          "displaced rockslide block with a reserved ice block"
+        ],
+        "mechanism_mentions": [
+          "sliding"
+        ],
+        "time_mentions": [
+          "During the sliding phase"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "sample_id": "FIG-126",
+    "image": "test_images/taylor_22__0219__TAYLOR_000038_0008_10.1080_08120099.2021.1848923.jpg",
+    "paper_title": "Full article: Geomorphic provinces and regolith-landform evolution of the Capricorn Orogen, Western Australia",
+    "figure": "Figure 8",
+    "figure_caption": "Figure 8. Regolith landscape model showing regolith-forming processes for Transect 4 from the Upland Basin Province of the Capricorn Orogen.",
+    "related_text": "An interpretation of the regolith evolution across Transect 4 is shown in Figure 8 . Subsequently, a change in climate to more arid condition or uplift results in the stripping of previously formed weathering profiles and an increase in the transport of pisoliths ( Figure 8c ). Arid conditions result in the formation of calcrete (Mann & Horwitz, Citation 1979 ) and the replacement of pisoliths. Finally, the dissection of the landscape by valleys formed by creeks and rivers results in the present-day regolith landscape ( Figure 8d ).",
+    "description_gold": "Paragraph:\nA change to arid conditions or uplift transforms previously formed weathering profiles into stripped weathering profiles and transported pisoliths. Under arid conditions, calcrete formation transforms transported pisoliths into calcrete. Valley dissection by creeks and rivers transforms the calcrete-bearing landscape into the present-day regolith landscape.\nEvent Sentences:\nA change to arid conditions or uplift transforms previously formed weathering profiles into stripped weathering profiles and transported pisoliths.\nUnder arid conditions, calcrete formation transforms transported pisoliths into calcrete.\nValley dissection by creeks and rivers transforms the calcrete-bearing landscape into the present-day regolith landscape.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "previously formed weathering profiles"
+        ],
+        "output_mentions": [
+          "stripped weathering profiles",
+          "transported pisoliths"
+        ],
+        "mechanism_mentions": [
+          "change to arid conditions",
+          "uplift"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "transported pisoliths"
+        ],
+        "output_mentions": [
+          "calcrete"
+        ],
+        "mechanism_mentions": [
+          "calcrete formation"
+        ],
+        "time_mentions": [
+          "Under arid conditions"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "calcrete-bearing landscape"
+        ],
+        "output_mentions": [
+          "present-day regolith landscape"
+        ],
+        "mechanism_mentions": [
+          "Valley dissection by creeks and rivers"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "sample_id": "FIG-127",
+    "image": "test_images/taylor_23__0248__TAYLOR_000382_0008_10.1080_17445647.2017.1351900.jpg",
+    "paper_title": "Full article: Geology of the area between Golo and Tavignano Valleys (Central Corsica): a snapshot of the continental metamorphic units of Alpine Corsica.",
+    "figure": "Figure 8",
+    "figure_caption": "Figure 8. Cartoon illustrating the tectono-metamorphic evolution of the Corte Slices during the Late Eocene 鈥?Oligocene time spam. From the top to the bottom: underthrusting of the Corte Slices at depth of 30 km into the tectonic wedge during the continental subduction and onset of the exhumation (D1 phase); continuous exhumation from 鈭?30 to 鈭?10 km of depth (D2 phase) and final stage of exhumation produced by the extensional tectonics driven by low-angle normal faults (D3 phase). Arrows legend: black full arrows indicate thrust kinematics, empty arrows indicate normal kinematics associated with the extrusion and thick black arrows indicate the D3 low-angle normal faults. Yellow stars indicate the position of the three units (CPU, CAU and PPU) during the three stage of the exhumation.",
+    "related_text": "(2016) , the features of the deformations and the P鈥揟 conditions of metamorphism suggest that structural framework of the Corte Slices was acquired by ductile extrusion tectonics during their exhumation in a transition setting from continental subduction to continental collision, during which these units are exhumed up to surface before their covering by the Miocene deposits ( Citation Malasoma & Marroni, 2007 ; Citation Malavieille et al., 1998 ; Citation Molli, 2008 ) ( Figure 8 ).",
+    "description_gold": "Paragraph:\nDuring the D1 phase, continental subduction and underthrusting transform the Corte Slices into Corte Slices at about 30 km depth within the tectonic wedge at the onset of exhumation. During the D2 phase, tectonic extrusion transforms the Corte Slices at about 30 km depth into exhumed Corte Slices at about 10 km depth. During the D3 phase, extensional tectonics driven by low-angle normal faults transform the Corte Slices at about 10 km depth into Corte Slices exhumed to the surface.\nEvent Sentences:\nDuring the D1 phase, continental subduction and underthrusting transform the Corte Slices into Corte Slices at about 30 km depth within the tectonic wedge at the onset of exhumation.\nDuring the D2 phase, tectonic extrusion transforms the Corte Slices at about 30 km depth into exhumed Corte Slices at about 10 km depth.\nDuring the D3 phase, extensional tectonics driven by low-angle normal faults transform the Corte Slices at about 10 km depth into Corte Slices exhumed to the surface.",
+    "gold_evolutions": [
+      {
+        "evidence_sent_ids": [
+          1
+        ],
+        "input_mentions": [
+          "Corte Slices"
+        ],
+        "output_mentions": [
+          "Corte Slices at about 30 km depth within the tectonic wedge at the onset of exhumation"
+        ],
+        "mechanism_mentions": [
+          "continental subduction",
+          "underthrusting"
+        ],
+        "time_mentions": [
+          "During the D1 phase"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          2
+        ],
+        "input_mentions": [
+          "Corte Slices at about 30 km depth"
+        ],
+        "output_mentions": [
+          "exhumed Corte Slices at about 10 km depth"
+        ],
+        "mechanism_mentions": [
+          "tectonic extrusion"
+        ],
+        "time_mentions": [
+          "During the D2 phase"
+        ]
+      },
+      {
+        "evidence_sent_ids": [
+          3
+        ],
+        "input_mentions": [
+          "Corte Slices at about 10 km depth"
+        ],
+        "output_mentions": [
+          "Corte Slices exhumed to the surface"
+        ],
+        "mechanism_mentions": [
+          "extensional tectonics driven by low-angle normal faults"
+        ],
+        "time_mentions": [
+          "During the D3 phase"
+        ]
+      }
+    ]
+  }
+]

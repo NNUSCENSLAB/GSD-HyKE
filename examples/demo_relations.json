@@ -1,0 +1,12 @@
+{
+  "evolutions": [
+    {
+      "evidence_sent_ids": [1],
+      "input_mentions": ["bedrock valley"],
+      "output_mentions": ["incised river valley"],
+      "mechanism_mentions": ["fluvial incision"],
+      "time_mentions": ["Stage 2"],
+      "location_mentions": ["valley floor"]
+    }
+  ]
+}

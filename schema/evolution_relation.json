@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/NNUSCENSLAB/GSD-HyKE/blob/main/schema/evolution_relation.json",
+  "title": "GSD-HyKE Evolution Relation output",
+  "description": "Each relation stores role-specific mentions. Empty optional roles are allowed; an empty evolutions list represents no annotated relation.",
+  "type": "object",
+  "required": ["evolutions"],
+  "properties": {
+    "evolutions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["input_mentions", "output_mentions", "mechanism_mentions"],
+        "properties": {
+          "evidence_sent_ids": {"type": "array", "items": {"type": "integer", "minimum": 1}, "uniqueItems": true},
+          "input_mentions": {"$ref": "#/$defs/mentions"},
+          "output_mentions": {"$ref": "#/$defs/mentions"},
+          "mechanism_mentions": {"$ref": "#/$defs/mentions"},
+          "time_mentions": {"$ref": "#/$defs/mentions"},
+          "location_mentions": {"$ref": "#/$defs/mentions"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "$defs": {
+    "mentions": {"type": "array", "items": {"type": "string", "minLength": 1}}
+  },
+  "additionalProperties": false
+}

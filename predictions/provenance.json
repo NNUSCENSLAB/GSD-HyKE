@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "files": {
+    "table4/qwen_base": {
+      "sha256": "67915098348829e8e81db495aa01da0c68785a98d99246e5d8eca4ad5044da2c",
+      "rows": 24
+    },
+    "table4/qwen_gsd_hyke": {
+      "sha256": "8ad724e167ccbd5b71c858e6f0a915545447ee9436b3ed06bd0a2c241d9619b6",
+      "rows": 24
+    },
+    "table4/llama_base": {
+      "sha256": "7aee2d70f999ae5b51a762782f0529a02e2d9d3bc9a2070eed0b156531c47daf",
+      "rows": 24
+    },
+    "table4/llama_gsd_hyke": {
+      "sha256": "1132a7b03b86dd81f24acc84189361022f27104e0c1daf7b3974fdc2e38faef6",
+      "rows": 24
+    },
+    "table4/internvl_base": {
+      "sha256": "f2fbb7abed77dfa79c152c6ed327e4765b9577a5a66f79c7e19462dcfb6e9739",
+      "rows": 24
+    },
+    "table4/internvl_gsd_hyke": {
+      "sha256": "a08d1f99803434c5333c6d1ea1afeafbfaa50a292b13b80d09d572b10cb9a076",
+      "rows": 24
+    },
+    "table5/full_hypergraph": {
+      "sha256": "8ad724e167ccbd5b71c858e6f0a915545447ee9436b3ed06bd0a2c241d9619b6",
+      "rows": 24
+    },
+    "table5/triplet_reconstructed": {
+      "sha256": "4c2847b89767568d8628d1f01f4fd97a3ea9f3754a3ec351faa2fb5c90afa03c",
+      "rows": 24
+    },
+    "table6/full": {
+      "sha256": "8ad724e167ccbd5b71c858e6f0a915545447ee9436b3ed06bd0a2c241d9619b6",
+      "rows": 24
+    },
+    "table6/without_first_stage_training": {
+      "sha256": "be86d246709e156e749e27849e066662799d2822048f1d1b808b8a55e94853fa",
+      "rows": 24
+    },
+    "table6/without_classification": {
+      "sha256": "6a41812137065f09393ebe33477a7bcc4d290e88c671508126fd6130b59979b2",
+      "rows": 24
+    },
+    "table6/without_completion": {
+      "sha256": "d0f6070b775cf812b5b2a4b1b8dd2616db0ea753734b651c9ba7698d406edb5c",
+      "rows": 24
+    },
+    "table6/without_visual_dialogue": {
+      "sha256": "db5912f68c1dae93419143fff848995134768b7442064421b68c95ba50e6d9cb",
+      "rows": 24
+    },
+    "table6/without_description_generation": {
+      "sha256": "72eefac50b34e696dd62bf3749b9f8e43a10959c256e1e1430f5b8a8f7720098",
+      "rows": 24
+    },
+    "table7/full": {
+      "sha256": "8ad724e167ccbd5b71c858e6f0a915545447ee9436b3ed06bd0a2c241d9619b6",
+      "rows": 24
+    },
+    "table7/without_description": {
+      "sha256": "3ab4de8f582e821efa172e97cb90ca7eab36d94edae45658bb6cbdfaf1f1f352",
+      "rows": 24
+    },
+    "table7/without_evidence": {
+      "sha256": "1ade44e67df8084fb57242cc2c00aca3f40f09d4733e46c7ee30e831098c4cd5",
+      "rows": 24
+    },
+    "table3/qwen_base": {
+      "sha256": "a085475379d57480b3cd53c02e73aab8333c86269040b3616aefe6114641e9e1",
+      "rows": 24
+    },
+    "table3/qwen_gsd_hyke": {
+      "sha256": "00a62d08c406e7bef26bf6eb3a768829ba0bf3ace92af90583f7ff93b993c952",
+      "rows": 24
+    },
+    "table3/llama_base": {
+      "sha256": "00e4a9e877a2a3c0d2b2264ba2339b2be7bef9dcfa5d2586150973d2900a092c",
+      "rows": 24
+    },
+    "table3/llama_gsd_hyke": {
+      "sha256": "6dce0eabc28d0987c7e42f1791e74dc7fb1fb99440a4eca7c417ffd8cec103c7",
+      "rows": 24
+    },
+    "table3/internvl_base": {
+      "sha256": "2762acc401fd11594a097bc98a10ea6576866309bbe13614ac6e922fdf060487",
+      "rows": 24
+    },
+    "table3/internvl_gsd_hyke": {
+      "sha256": "82eaebe51b10132329b9324791aa8224c1fb0523db41ac8c4f152e438af7e665",
+      "rows": 24
+    }
+  },
+  "known_limitations": [
+    "The four API-based Table 4 rows are released separately in api_extraction_predictions.jsonl; see api_provenance.json for source hashes and selected repetitions. Raw API responses and API inference are not released.",
+    "The manuscript CLIPScore values use an unresolved historical scoring convention; the released description predictions support ROUGE-L and BERTScore recomputation, while CLIPScore remains explicitly excluded pending resolution."
+  ]
+}

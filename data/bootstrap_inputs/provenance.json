@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "created_utc": "2026-09-25T06:11:18.989927+00:00",
+  "purpose": "Sufficient per-diagram counts for independently reproducing paired bootstrap intervals.",
+  "reproducibility_scope": {
+    "bootstrap_reproduction": "complete from the released per-diagram count tables",
+    "raw_comparator_metric_recomputation": "not included; comparator prediction artifacts remain outside this package",
+    "model_inference": "outside the scope of this package"
+  },
+  "gold_mapping": {
+    "path": "gold.json",
+    "sha256": "a1f3de344ceb501aad340b004adfdfdc9885f4e1edda4ea806cc7716664764cb",
+    "mapping_rule": "sample_id joined to comparator index using the package gold rows; index and sample_id uniqueness validated",
+    "index_to_sample_id": {
+      "0": "FIG-041",
+      "1": "FIG-079",
+      "2": "FIG-047",
+      "3": "FIG-074",
+      "4": "FIG-064",
+      "5": "FIG-059",
+      "6": "FIG-094",
+      "7": "FIG-060",
+      "8": "FIG-085",
+      "9": "FIG-071",
+      "10": "FIG-089",
+      "11": "FIG-048",
+      "12": "FIG-044",
+      "13": "FIG-078",
+      "14": "FIG-046",
+      "15": "FIG-037",
+      "16": "FIG-101",
+      "17": "FIG-121",
+      "18": "FIG-122",
+      "19": "FIG-123",
+      "20": "FIG-124",
+      "21": "FIG-125",
+      "22": "FIG-126",
+      "23": "FIG-127"
+    }
+  },
+  "comparator_gold_reference": {
+    "path": "stage2_revised_test24_gold.json",
+    "sha256": "c3f9487e0c7daa8c135255e92929171b4a09250a66216515d005e72861f0ebda",
+    "validation": "Every indexed raw evolution record exactly matches the package gold before attaching sample_id."
+  },
+  "settings": {
+    "full": {
+      "source_path": "recomputed_metrics.json",
+      "source_filename": "recomputed_metrics.json",
+      "source_sha256": "737e4f1de8bb377b704ba64c81331dc66b351cb40a501bae8277510b13435534",
+      "recorded_gold_path": "gold.json",
+      "adapter": "per_sample.true_positives / predicted_events / gold_events",
+      "output_csv": "full_per_diagram_counts.csv",
+      "counts": {
+        "tp": 53,
+        "fp": 42,
+        "fn": 32,
+        "predicted_count": 95,
+        "gold_count": 85
+      },
+      "f1": 0.5888888888888889,
+      "rows": 24
+    },
+    "triplet": {
+      "source_path": "triplet_test24_event_eval.json",
+      "source_filename": "triplet_test24_event_eval.json",
+      "source_sha256": "f6c4492512517b3c80c3047065e5bc419d019779a64bde78cd9df1cfdfbd5c08",
+      "recorded_gold_path": "stage2_revised_test24_gold.json",
+      "adapter": "per_sample.event_tp / pred_event_count / gold_event_count",
+      "output_csv": "triplet_per_diagram_counts.csv",
+      "counts": {
+        "tp": 37,
+        "fp": 56,
+        "fn": 48,
+        "predicted_count": 93,
+        "gold_count": 85
+      },
+      "f1": 0.4157303370786517,
+      "rows": 24
+    },
+    "without_evidence": {
+      "source_path": "relation_revised_test24_eval.json",
+      "source_filename": "relation_revised_test24_eval.json",
+      "source_sha256": "656913e59ad439980bae46a6ff24c1ea38e9666bc2c38b5e66c0bbed2c8b4e4c",
+      "recorded_gold_path": "stage2_revised_test24_gold.json",
+      "adapter": "per_sample.evolution_tp / pred_evolution_count / gold_evolution_count",
+      "output_csv": "without_evidence_per_diagram_counts.csv",
+      "counts": {
+        "tp": 38,
+        "fp": 55,
+        "fn": 47,
+        "predicted_count": 93,
+        "gold_count": 85
+      },
+      "f1": 0.42696629213483145,
+      "rows": 24
+    },
+    "without_description": {
+      "source_path": "relation_revised_test24_eval.json",
+      "source_filename": "relation_revised_test24_eval.json",
+      "source_sha256": "29374abec183a0d04e75d863f1706d6c6ab36417135a6f30e71335a3459d58d0",
+      "recorded_gold_path": "stage2_revised_test24_gold.json",
+      "adapter": "per_sample.evolution_tp / pred_evolution_count / gold_evolution_count",
+      "output_csv": "without_description_per_diagram_counts.csv",
+      "counts": {
+        "tp": 17,
+        "fp": 53,
+        "fn": 68,
+        "predicted_count": 70,
+        "gold_count": 85
+      },
+      "f1": 0.21935483870967742,
+      "rows": 24
+    }
+  }
+}
