@@ -246,7 +246,7 @@ def collect_mentions(gold_rows: list[dict], prediction_rows: list[dict], include
 
 def evaluate_setting(
     gold_rows: list[dict], prediction_rows: list[dict], sim: SemanticSimilarity,
-    tau: float, entity_label_constrained: bool = True,
+    tau: float,
 ) -> dict:
     gold = {row["sample_id"]: clean_events(row["gold_evolutions"]) for row in gold_rows}
     predicted = {row["sample_id"]: clean_events(row["evolutions"]) for row in prediction_rows}
@@ -266,7 +266,7 @@ def evaluate_setting(
         gold_entities, pred_entities = entities(gold_events), entities(entity_events)
         tp = entity_tp(
             pred_entities, gold_entities, sim, tau,
-            strict_label=entity_label_constrained,
+            strict_label=True,
         )
         entity.tp += tp
         entity.fp += len(pred_entities) - tp
@@ -278,7 +278,7 @@ def evaluate_setting(
     epv = [row["epv"] for row in graph_rows if row["epv"] is not None]
     return {
         "samples": len(gold),
-        "entity_label_constrained_relaxed" if entity_label_constrained else "entity_relaxed": entity.as_dict(),
+        "entity_label_constrained_relaxed": entity.as_dict(),
         "relation_relaxed": relation.as_dict(),
         "graph": {
             "ged": sum(row["ged"] for row in graph_rows) / len(graph_rows),
@@ -301,10 +301,6 @@ def main() -> None:
     parser.add_argument("--threshold", type=float, default=0.7)
     parser.add_argument("--device", choices=("auto", "cpu", "cuda"), default="auto")
     parser.add_argument("--batch-size", type=int, default=32)
-    parser.add_argument(
-        "--entity-unconstrained-setting", action="append", default=[],
-        help="Setting ID evaluated with the historical entity metric without role-label constraints",
-    )
     parser.add_argument("--output", type=Path, default=root / "results/recomputed_extraction_metrics.json")
     args = parser.parse_args()
 
@@ -317,19 +313,13 @@ def main() -> None:
     unknown = sorted(set(selected) - set(grouped))
     if unknown:
         raise ValueError(f"Unknown settings: {unknown}")
-    invalid_unconstrained = sorted(set(args.entity_unconstrained_setting) - set(selected))
-    if invalid_unconstrained:
-        raise ValueError(f"Entity-unconstrained settings were not selected: {invalid_unconstrained}")
     selected_rows = [row for name in selected for row in grouped[name]]
     similarity = SemanticSimilarity(args.model, args.device)
     similarity.precompute(collect_mentions(gold_rows, selected_rows, include_incomplete=True), args.batch_size)
     results = {
         "config": {"similarity_model": args.model, "threshold": args.threshold},
         "settings": {
-            name: evaluate_setting(
-                gold_rows, grouped[name], similarity, args.threshold,
-                entity_label_constrained=name not in args.entity_unconstrained_setting,
-            )
+            name: evaluate_setting(gold_rows, grouped[name], similarity, args.threshold)
             for name in selected
         },
     }

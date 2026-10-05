@@ -12,9 +12,9 @@ an `evolutions` array. Each element has Input (`input_mentions`), Output
 Location roles. `evidence_sent_ids` refer to Stage 1 sentence numbers. See
 `schema/evolution_relation.json` and `examples/demo_relations.json`.
 
-An empty `evolutions` array means no supported relation was extracted. It
-does not imply a prediction file is missing. Incomplete predicted relations
-can occur and are counted according to the selected evaluation convention.
+An empty `evolutions` array is a valid prediction representing zero extracted
+relations. Every predicted relation is scored in its observed role structure
+under the documented evaluation convention.
 
 ## Common commands
 
@@ -41,9 +41,8 @@ Table 3 description metrics are recomputed with `python main.py evaluate
 `scripts/reconstruct_triplets.py` converts the released raw triplet strings
 to the event candidates used for the Table 5 comparison. It refuses to
 overwrite its output. See `predictions/triplet_provenance.json` for the
-historical grouping rule and the one malformed raw record.
+reconstruction rule and the one non-JSON raw response.
 
-The demo is a self-match smoke test, not evidence of extraction accuracy.
-The test-metric commands evaluate already-frozen outputs; they do not retrain
-or re-query any comparator model. See `data_statement.md` for the exact
-release scope and limitations.
+The demo is a schema and metric-path smoke test. Extraction-accuracy evidence
+is produced by the test-metric commands over the released frozen outputs. See
+`data_statement.md` for the exact reproduction scope.

@@ -236,6 +236,73 @@
       "interpretation": "reference"
     },
     {
+      "arm": "without_first_stage_training",
+      "repeats": [
+        {
+          "repeat": 1,
+          "relation": {
+            "precision": 0.13333333333333333,
+            "recall": 0.047058823529411764,
+            "f1": 0.06956521739130435,
+            "tp": 4,
+            "fp": 26,
+            "fn": 81
+          },
+          "entity": {
+            "precision": 0.7256637168141593,
+            "recall": 0.17943107221006566,
+            "f1": 0.2877192982456141,
+            "tp": 82,
+            "fp": 31,
+            "fn": 375
+          }
+        },
+        {
+          "repeat": 2,
+          "relation": {
+            "precision": 0.13333333333333333,
+            "recall": 0.047058823529411764,
+            "f1": 0.06956521739130435,
+            "tp": 4,
+            "fp": 26,
+            "fn": 81
+          },
+          "entity": {
+            "precision": 0.7256637168141593,
+            "recall": 0.17943107221006566,
+            "f1": 0.2877192982456141,
+            "tp": 82,
+            "fp": 31,
+            "fn": 375
+          }
+        },
+        {
+          "repeat": 3,
+          "relation": {
+            "precision": 0.13333333333333333,
+            "recall": 0.047058823529411764,
+            "f1": 0.06956521739130435,
+            "tp": 4,
+            "fp": 26,
+            "fn": 81
+          },
+          "entity": {
+            "precision": 0.7256637168141593,
+            "recall": 0.17943107221006566,
+            "f1": 0.2877192982456141,
+            "tp": 82,
+            "fp": 31,
+            "fn": 375
+          }
+        }
+      ],
+      "relation_f1_min": 0.06956521739130435,
+      "relation_f1_median": 0.06956521739130435,
+      "relation_f1_max": 0.06956521739130435,
+      "delta_full_minus_arm_median": 0.5193236714975845,
+      "interpretation": "first_stage_training_effect"
+    },
+    {
       "arm": "wo_grounding",
       "repeats": [
         {
@@ -652,8 +719,7 @@
     {"setting_id": "table4/gpt_5_5", "entity_f1": 0.4950, "relation_f1": 0.2642, "ged": 11.0442, "nged": 0.4582, "ecc": 0.2659, "epv": 0.8906},
     {"setting_id": "table4/gpt_5_6_terra", "entity_f1": 0.5150, "relation_f1": 0.2745, "ged": 10.7515, "nged": 0.4852, "ecc": 0.2738, "epv": 0.8894}
   ],
-  "excluded_pending_resolution": [],
-  "known_limitations": [
+  "reproduction_notes": [
     "Table 3 CLIPScore uses openai/clip-vit-base-patch32 and 2.5 * max(cosine(image_embedding, text_embedding), 0).",
     "Frozen per-diagram predictions for the four API-based Table 4 rows are available in predictions/api_extraction_predictions.jsonl and are evaluated with the same role-constrained entity and EPV definitions as the open-source rows."
   ]

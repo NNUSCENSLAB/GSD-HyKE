@@ -36,8 +36,6 @@ def run(path: Path, settings: list[str], output: Path, model: str, device: str) 
         "--predictions", str(path), "--output", str(output),
         "--model", model, "--device", device,
     ]
-    if "table6/without_first_stage_training" in settings:
-        command.extend(("--entity-unconstrained-setting", "table6/without_first_stage_training"))
     for name in settings:
         command.extend(("--setting", name))
     subprocess.run(command, check=True, cwd=ROOT)

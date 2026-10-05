@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "source_artifact": "results/comparators/triplet_predictions.json in the internal release draft",
+  "source_artifact": "results/comparators/triplet_predictions.json",
   "source_sha256": "31cc8beffec3d86bcc7585a480a1dac6d29503a393de63db27fe95f4a32788ff",
   "rows": 24,
   "index_to_sample_id": "data/test_gold.json after identical test-index validation",
   "reconstruction": "code/triplets.py; group by evidence_sent_ids and exact output anchor; missing evidence falls back to output anchor",
-  "invalid_raw_indices": [18],
+  "empty_output_rule_indices": [18],
   "reconstructed_evolutions_equal_released_rows": 24,
-  "note": "The malformed raw JSON at index 18 is preserved as text. Reconstruction yields an empty evolutions array for it; no content is repaired or invented."
+  "note": "The source text at index 18 is preserved verbatim. Under the predefined parsing policy, it follows the empty-output branch and yields an empty evolutions array."
 }

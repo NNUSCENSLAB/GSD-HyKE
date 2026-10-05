@@ -1,6 +1,5 @@
 # Tested reference: Python 3.10, PyTorch 2.6.0 with CUDA 12.4, A100 80 GB.
-# This environment installs evaluation/inference dependencies, not the omitted
-# full training corpus. Historical LLaMA-Factory metadata: 0.9.4.dev0.
+# Evaluation and inference environment. Reference LLaMA-Factory version: 0.9.4.dev0.
 name: gsd-hyke
 channels:
   - conda-forge

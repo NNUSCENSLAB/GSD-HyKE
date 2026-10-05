@@ -1,6 +1,6 @@
-# Effective Stage 2 SFT specification; training data are not in the compact release.
-# Stage 2 resumes the released Stage 1 adapter, whose PEFT configuration fixes
-# LoRA dropout at 0.2. See configs/README.md for the historical YAML detail.
+# Effective Stage 2 SFT setting specification.
+# Stage 2 resumes the released Stage 1 adapter; both released adapter
+# configurations record LoRA dropout at 0.2.
 model_name_or_path: Qwen/Qwen2.5-VL-7B-Instruct
 adapter_name_or_path: models/stage1
 image_max_pixels: 262144

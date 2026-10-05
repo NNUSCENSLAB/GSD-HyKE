@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reconstruct historical triplet outputs into candidate Evolution Relations."""
+"""Reconstruct direct-triplet outputs into candidate Evolution Relations."""
 
 from __future__ import annotations
 

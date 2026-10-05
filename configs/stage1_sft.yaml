@@ -1,4 +1,4 @@
-# Historical portable Stage 1 SFT specification; training data are not in the compact release.
+# Effective Stage 1 SFT setting specification.
 model_name_or_path: Qwen/Qwen2.5-VL-7B-Instruct
 image_max_pixels: 262144
 trust_remote_code: true

@@ -1,4 +1,4 @@
-"""Reconstruct Evolution Relations from the historical direct-triplet format."""
+"""Reconstruct Evolution Relations from the direct-triplet baseline format."""
 
 from __future__ import annotations
 
@@ -70,7 +70,7 @@ def direct_triples_to_events(obj: dict[str, Any]) -> dict[str, Any]:
 
 
 def reconstruct_text(raw_prediction: str) -> tuple[dict[str, Any], bool]:
-    """Return an empty prediction for malformed raw JSON, without repairing it."""
+    """Return an empty prediction for a non-JSON raw response without inventing content."""
     try:
         parsed = json.loads(raw_prediction)
     except (TypeError, json.JSONDecodeError):

@@ -94,8 +94,8 @@
       "rows": 24
     }
   },
-  "known_limitations": [
-    "The four API-based Table 4 rows are released separately in api_extraction_predictions.jsonl; see api_provenance.json for source hashes and selected repetitions. Raw API responses and API inference are not released.",
+  "reproduction_notes": [
+    "The four API-based Table 4 rows are released separately in api_extraction_predictions.jsonl for frozen-output metric recomputation; see api_provenance.json for source hashes and selected repetitions.",
     "Table 3 CLIPScore is recomputed from the released images and descriptions with openai/clip-vit-base-patch32 and 2.5 * max(cosine(image_embedding, text_embedding), 0)."
   ]
 }

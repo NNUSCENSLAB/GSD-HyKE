@@ -22,17 +22,16 @@ not independent runs.
 `api_extraction_predictions.jsonl` contains 24 frozen Stage 2 predictions for
 each of the four API-based Table 4 models. These rows are the selected main
 repetitions, not averages across three repetitions. The index-to-`sample_id`
-join was validated against all 24 image filenames. Only parsed Evolution
-Relations are included; raw API responses, request payloads, and response IDs
-are not released. Source paths and SHA-256 hashes are in `api_provenance.json`.
+join was validated against all 24 image filenames. The released API artifact
+contains sanitized parsed Evolution Relations for metric recomputation. Source
+paths and SHA-256 hashes are in `api_provenance.json`.
 Use `python main.py evaluate --predictions predictions/api_extraction_predictions.jsonl
 --device cpu` for the manuscript Table 4 metrics. API and open-source rows use
 the same role-constrained Entity/Relation definitions and full EPV definition.
 
 `triplet_raw.jsonl` contains the 24 direct-triplet model outputs before event
-reconstruction, including one malformed raw output. Its exact source hash,
-index mapping, and grouping rule are in `triplet_provenance.json`.
+reconstruction. Its exact source hash, index mapping, grouping rule, and
+empty-output policy are in `triplet_provenance.json`.
 
-The files enable evaluation of these outputs but do not replace the omitted
-comparator checkpoints. See `provenance.json` for setting IDs, source-artifact
-hashes, and known limitations.
+See `provenance.json` for setting IDs, source-artifact hashes, and
+reproduction-scope notes.

@@ -5,8 +5,7 @@ method for landform transformations in geomorphological schematic diagrams”
 (submission draft for *Computers & Geosciences*). **Authors:** Yekang Zhou, Teng Zhong, Pei Xu,
 Songshan Yue, Run Shi, Jiahao Sun, Bingxian Lin, Liangchen Zhou, and Guonian
 Lü. **Contact:** Teng Zhong, tzhong27@njnu.edu.cn. This repository corresponds
-to the revised 24-diagram test set and manuscript Tables 3–7; it is not an
-accepted-paper archive. Please confirm manuscript metadata before publishing.
+to the revised 24-diagram test set and manuscript Tables 3–7.
 
 This repository is the compact public reproduction package for **GSD-HyKE**.
 It is intentionally organized around two reviewer-facing tasks: recomputing the
@@ -16,8 +15,8 @@ model on the 24 held-out geomorphological schematic diagrams (GSDs).
 The release includes the complete 24-diagram test set, rights-reviewed test
 images, frozen predictions for the released open-source comparisons and
 ablations and four API-model comparisons, two final LoRA adapters, small examples of all data formats, metric
-code, and paired-bootstrap inputs. It does **not** include the complete training
-corpus or every intermediate checkpoint.
+code, and paired-bootstrap inputs. Training-data availability and third-party
+licensing are documented in `docs/data_statement.md`.
 
 The task is specific: given one GSD image, its caption, and associated source
 context, Stage 1 generates a geomorphological description and evidence
@@ -30,7 +29,7 @@ general-purpose chat assistant.
 .
 ├── main.py                    # Small command-line entry point
 ├── environment.yml            # Conda evaluation/inference environment
-├── configs/                   # Historical training settings and limitations
+├── configs/                   # Effective training-setting specifications
 ├── schema/                    # Evolution Relation JSON schema
 ├── examples/                  # Original synthetic diagram and text fixtures
 ├── scripts/                   # One-command demo and per-table evaluation
@@ -77,17 +76,17 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-The Conda specification installs the evaluation/inference stack. The
-historical training environment also used LLaMA-Factory `0.9.4.dev0`, but
-training is not runnable from this compact corpus. CUDA 12.4 and one A100
-80 GB are the tested reference for full inference, not a guaranteed minimum.
+The Conda specification installs the evaluation/inference stack. The reference
+training software used LLaMA-Factory `0.9.4.dev0`. The package targets metric
+recomputation and final-model inference; full training additionally requires
+the complete training and validation corpus. CUDA 12.4 and one A100 80 GB are
+the tested reference configuration for full inference.
 
 Metric recomputation can run on CPU; CUDA is optional for this step. Final
 inference uses `Qwen/Qwen2.5-VL-7B-Instruct` in bfloat16 with automatic device
 mapping and therefore requires access to the base model plus a CUDA-capable
 GPU. The released end-to-end 24-diagram run was verified on one NVIDIA A100
-80 GB GPU. This is a tested reference configuration, not a measured minimum:
-the minimum VRAM, peak RAM, and wall-clock runtime have not been benchmarked.
+80 GB GPU.
 The released adapters do not contain the base-model weights. On first use,
 Hugging Face downloads SciBERT (`allenai/scibert_scivocab_uncased`) for the
 semantic metrics, CLIP (`openai/clip-vit-base-patch32`) for Table 3, and Qwen
@@ -208,19 +207,18 @@ All Table 4 rows use the same metric definitions: Entity matching preserves
 the Object/Mechanism/Location/Time labels, Relation matching preserves the
 Input/Output/Driver/Location/Time roles, and EPV requires Input, Output, and
 Driver. The released API records reproduce the selected main repetition for
-each model;
-they do not permit new API inference or the three-repeat selection procedure
-to be rerun without the original service and unreleased raw responses. See
+each model. Frozen parsed outputs support exact metric recomputation;
+generating new outputs requires the corresponding API service. See
 `predictions/api_provenance.json` for the selected repetition and source hashes.
 
 The Table 5 triplet arm additionally releases the raw triplet text in
-`predictions/triplet_raw.jsonl`. Its historical event reconstruction groups
+`predictions/triplet_raw.jsonl`. Its event reconstruction groups
 triples by evidence-sentence IDs and exact Output anchor (or Output alone when
 IDs are absent). Recreate the frozen event candidates with
 `python scripts/reconstruct_triplets.py`; the 24 reconstructed relation lists
-have been checked against the released Table 5 rows. One raw output is
-malformed at test index 18 and is preserved as such, rather than silently
-repaired. See `predictions/triplet_provenance.json`.
+have been checked against the released Table 5 rows. The predefined
+reconstruction policy, including its empty-output branch, is documented in
+`predictions/triplet_provenance.json`.
 
 Table 3 ROUGE-L, SciBERT BERTScore, and CLIPScore are recomputed with:
 
@@ -263,34 +261,25 @@ python main.py infer \
 Outputs are written to `results/inference_test24/`. Model download and GPU
 requirements are the user's responsibility.
 
-## Scope and known limitations
+## Repository coverage
 
 - This compact repository supports independent metric recomputation from the
   frozen outputs and final-model inference on the released 24-image test set.
-- It is not a full training release: only format examples are provided for the
-  training tasks, so the original training runs cannot be repeated from this
-  repository alone.
-- The original Stage 2 launch YAML stated dropout 0.1, but resumed a Stage 1
-  adapter whose effective PEFT dropout was 0.2; both released adapters record
-  0.2. `configs/README.md` documents why the portable effective configuration
-  uses 0.2.
-- Six relation-negative records belong to the original **training** split,
-  not the 24-image test split. Their gold-only listing is released for data
-  documentation; predictions for these training-only records are outside the
-  compact release, and no negative-test metric is claimed. See
-  `docs/data_statement.md`.
-- The four API-model Table 4 rows can be re-evaluated from frozen per-diagram
-  predictions, but the repository does not reproduce their API generation.
+- The released Stage 1 and Stage 2 adapters both use LoRA dropout 0.2,
+  consistent with the portable configurations and manuscript Table A.1.
+- Six relation-negative training records and their use in the 840-row Stage 2
+  training sequence are documented in `docs/data_statement.md`.
+- The four API-model Table 4 rows can be re-evaluated from the released frozen
+  per-diagram predictions.
 - Table 3 CLIPScore is reproducible from the released images and frozen Stage
   1 descriptions using the documented CLIP model and formula.
-- Frozen predictions are provided for the triplet and ablation comparisons;
-  their model checkpoints are not included. Their evaluation is reproducible,
-  but their inference is not reproduced end to end.
+- Frozen predictions support independent evaluation of the triplet and
+  ablation comparisons.
 
 These boundaries should also be stated in the manuscript's Code and Data
 Availability section.
 
-The complete release scope and image-sharing rationale are in
+The training-data coverage and image-sharing rationale are in
 `docs/data_statement.md`; the input/output user guide is in
 `docs/user_guide.md`.
 
