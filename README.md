@@ -25,7 +25,7 @@ general-purpose chat assistant.
 
 ## From a diagram to Evolution Relations
 This FIG-127 example shows the two-stage workflow: GSD-HyKE generates a geomorphological description and then extracts connected Evolution Relations from it.
-<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/129a88a7-dca2-4cd3-97b8-321e5801603e" />
+<img src="FIG-127-workflow.png" width="850" alt="FIG-127 source diagram, description summary, and predicted Evolution Relations">
 
 The four relations shown are model predictions; the reference annotation contains three. The Stage 1 text in the graphic summarizes the generated description. Source diagram adapted from Di Rosa et al. (2017), Fig. 8. See the reference annotations, frozen predictions, and image attribution.
 
