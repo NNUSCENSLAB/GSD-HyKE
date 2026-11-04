@@ -53,64 +53,63 @@ The four relations shown are model predictions; the reference annotation contain
 └── tests/                     # CPU-only integrity and unit tests
 ```
 
+## Quick start
+
+On GitHub, select **Code → Download ZIP** and extract the archive. Open a terminal in the extracted folder containing `main.py` and run:
+
+```bash
+python main.py example
+```
+
+This example requires only Python. It reads the released prediction for `FIG-041`, reports three Evolution Relations with Input, Output, and Driver fields, and writes the walkthrough to `results/example/FIG-041.json`.
+
+To inspect a different sample or prediction setting, run:
+
+```bash
+python main.py example --sample-id FIG-079 --setting table7/without_evidence --output results/example/FIG-079-without-evidence.json
+```
+
 ## Installation
 
-Python 3.10 or 3.11 is recommended. The released end-to-end workflow was
-verified with Python 3.10, PyTorch 2.6.0 (CUDA 12.4 build), Transformers 4.49.0,
-PEFT 0.15.2, and Accelerate 1.7.0. Clone with Git LFS because the two adapter
-files are tracked as LFS objects.
+Follow this section to recompute metrics or run full model inference. Python 3.10 or 3.11 is recommended. If you already downloaded the ZIP for evaluation, use the extracted folder. For full inference, clone with Git LFS to download the two LoRA adapters:
 
 ```bash
 git lfs install
 git clone https://github.com/NNUSCENSLAB/GSD-HyKE.git
 cd GSD-HyKE
+git lfs pull
+```
+
+From the repository root, choose **one** of the following installation methods.
+
+### Option 1: Conda
+
+```bash
 conda env create -f environment.yml
 conda activate gsd-hyke
 ```
 
-Run these commands from the repository root because `environment.yml` reads
-the adjacent `requirements.txt`. After cloning, `git lfs pull` can be used to
-confirm that both adapter binaries—not only their small LFS pointer files—are
-present.
-
-Alternatively, use pip without Conda:
+### Option 2: pip in a virtual environment
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
+```
+
+Activate the environment with `source .venv/bin/activate` on Linux or macOS, or `.\.venv\Scripts\Activate.ps1` in Windows PowerShell. Then install the dependencies:
+
+```bash
 python -m pip install -r requirements.txt
 ```
 
-The Conda specification installs the evaluation/inference stack. The reference
-training software used LLaMA-Factory `0.9.4.dev0`. The package targets metric
-recomputation and final-model inference; full training additionally requires
-the complete training and validation corpus. CUDA 12.4 and one A100 80 GB are
-the tested reference configuration for full inference.
+Metric recomputation can run on a CPU. On first use, the evaluator downloads SciBERT (`allenai/scibert_scivocab_uncased`) for semantic scoring and, for Table 3, CLIP (`openai/clip-vit-base-patch32`). Local model paths or a populated Hugging Face cache can be used instead.
 
-Metric recomputation can run on CPU; CUDA is optional for this step. Final
-inference uses `Qwen/Qwen2.5-VL-7B-Instruct` in bfloat16 with automatic device
-mapping and therefore requires access to the base model plus a CUDA-capable
-GPU. The released end-to-end 24-diagram run was verified on one NVIDIA A100
-80 GB GPU.
-The released adapters do not contain the base-model weights. On first use,
-Hugging Face downloads SciBERT (`allenai/scibert_scivocab_uncased`) for the
-semantic metrics, CLIP (`openai/clip-vit-base-patch32`) for Table 3, and Qwen
-(`Qwen/Qwen2.5-VL-7B-Instruct`) only for final-model inference. Internet access
-is therefore needed for the first model-backed run unless local model paths or
-a populated Hugging Face cache are supplied. `python main.py verify`, `python
-main.py demo`, `python -m unittest discover -s tests -v`, and `python main.py
-infer --check-only` do not download these external model weights.
+Full inference requires a CUDA-capable GPU, the Qwen base model (`Qwen/Qwen2.5-VL-7B-Instruct`), and both released LoRA adapters. The 24-diagram run used one NVIDIA A100 GPU with 80 GB of memory, Python 3.10, PyTorch 2.6.0 (CUDA 12.4 build), Transformers 4.49.0, PEFT 0.15.2, and Accelerate 1.7.0. The repository is approximately 185 MiB with both adapters and before downloading the base model.
 
-The inference wrapper processes 24 test diagrams, limits image inputs to
-262,144 pixels, and uses maximum generation lengths of 1,024 tokens for Stage
-1 and 2,048 tokens for Stage 2. The two LoRA adapters are approximately 77 MiB
-each; the repository excluding downloaded base models is approximately 185
-MiB.
+The reference training software was LLaMA-Factory `0.9.4.dev0`. Full training additionally requires the complete training and validation corpus.
 
 ## Quick verification
 
-The following commands do not load a large model:
+After installing the dependencies, run these checks from the repository root. The `verify` and `infer --check-only` commands check that the two LoRA adapter files are present.
 
 ```bash
 python main.py verify
@@ -119,47 +118,15 @@ python -m unittest discover -s tests -v
 python main.py infer --check-only
 ```
 
-## Run the lightweight example
+## SciBERT demo
 
-To inspect an original synthetic two-stage river-valley diagram and print a
-description, evidence sentence, role-specific JSON, and a SciBERT-based
-Relation Relaxed F1 self-match smoke test, run:
+After installing the evaluation dependencies, run:
 
 ```bash
 bash scripts/run_demo.sh
 ```
 
-The fixture is in `examples/`; it is not a new study observation or a trained
-model prediction. This command needs SciBERT but **not** the 7B Qwen weights.
-To use a local SciBERT cache, pass `--model /path/to/scibert`. The output
-schema is [schema/evolution_relation.json](schema/evolution_relation.json):
-`input_mentions` = Input, `output_mentions` = Output, and
-`mechanism_mentions` = Driver; Time and Location are optional role lists.
-
-This CPU-only example requires no model download. It joins one test diagram to
-the released full-model prediction by `sample_id`, verifies the referenced
-image and Evolution Relation role structure, and writes a human-readable JSON
-walkthrough:
-
-```bash
-python main.py example
-```
-
-The default input is sample `FIG-041` from `data/test_gold.json` and setting
-`table5/full_hypergraph` from `predictions/extraction_predictions.jsonl`. The
-output is written to `results/example/FIG-041.json` and contains the source
-caption and context, the predicted Input/Output/Driver/Time/Location roles, and
-a short gold-reference summary. It is a walkthrough of a frozen prediction,
-not a new inference run and not a replacement for the semantic evaluation.
-
-Alternative released samples or settings can be selected explicitly:
-
-```bash
-python main.py example \
-  --sample-id FIG-079 \
-  --setting table7/without_evidence \
-  --output results/example/FIG-079-without-evidence.json
-```
+The script displays the description, evidence sentence, and Evolution Relations for a synthetic river-valley example in `examples/`. It then scores the same relations against themselves using SciBERT. The expected Relation Relaxed F1 is `1.0000`, which checks that the scoring pipeline runs. To use a local SciBERT model, pass `--model /path/to/scibert`. The relation fields are documented in [`schema/evolution_relation.json`](schema/evolution_relation.json).
 
 The principal public interfaces are:
 
