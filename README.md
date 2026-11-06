@@ -3,7 +3,7 @@
 **Manuscript:** “A process-centered hypergraph data model and extraction
 method for landform transformations in geomorphological schematic diagrams”
 (submission draft for *Computers & Geosciences*). **Authors:** Yekang Zhou, Teng Zhong, Pei Xu,
-Songshan Yue, Run Shi, Jiahao Sun, Bingxian Lin, Liangchen Zhou, and Guonian
+Run Shi, Jiahao Sun, Bingxian Lin, Liangchen Zhou, Songshan Yue, and Guonian
 Lü. **Contact:** Teng Zhong, tzhong27@njnu.edu.cn. This repository corresponds
 to the revised 24-diagram test set and manuscript Tables 3–7.
 
